@@ -1,6 +1,10 @@
 import React from 'react'
 import './app.scss'
 import Preloader from './components/Preloader/Preloader';
+import { Route, Routes } from 'react-router';
+import Layout from './components/Layout/Layout';
+import Home from './pages/Home/Home';
+
 
 export function App() {
   React.useEffect(()=>{
@@ -17,13 +21,24 @@ export function App() {
 
 
   return (
+
     <>
-    <Preloader/>
-    <h1>Hello world</h1>
-    <div className='w-full h-[2500px]'></div>
+    <Routes>
+
+      <Route path='/' element={<Layout/>}>
+        <Route index element={<Home/>}/>
+    
+        
+
+
+      </Route>
+       
+   
+    </Routes>
+
       
  
- git
+ 
       
     </>
   )

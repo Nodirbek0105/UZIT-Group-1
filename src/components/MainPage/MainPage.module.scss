@@ -1,0 +1,45 @@
+.mainPage{
+  display: flex;
+  min-height: 100vh;
+  padding-top: 27px;
+  padding-bottom: 101px; 
+  padding-left: 127px;
+  line-height: 100px;
+  position: relative;
+  overflow: hidden;
+  // background: url(/Main.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #262626; 
+  z-index: 2;
+  
+
+  .title{
+    margin-top: 25px;
+    font-size: 120px;
+  
+    color: white;
+ font-family: "Swis721 Win95BT" sans-serif;
+ font-weight: bold;
+ span{
+  color: green;
+ }
+ p{
+  font-size: 87px;
+ }
+
+
+
+  }
+  .subtitle{
+    margin-top: 25px;
+    line-height: 41px;
+    font-weight: 700; 
+    font-size: 34px; 
+    color: #F2F2F2;
+   
+  }
+
+  
+}

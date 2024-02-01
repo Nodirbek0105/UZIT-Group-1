@@ -1,0 +1,36 @@
+.about{
+ width: 100%;
+ height: fit-content;
+ padding-bottom: 66px; 
+ padding-top: 45px;
+//  height: 1400px;
+
+ background: linear-gradient(180deg, #262626 14.46%, #6B8C49 100%);
+
+
+// background: url('./about.png');
+// background-repeat: no-repeat; 
+// background-position: center;
+// background-size: cover;
+
+  .aboutLeft{
+    display: flex;
+       
+  }
+  h2{
+    font-size: 100px; 
+    font-weight: 700; 
+
+  }
+  p{
+    font-size: 29px;
+    font-weight: 700;
+  }
+  .aboutRight{
+    display: flex; 
+    justify-content: space-between;
+    padding-left: 135px;
+  }
+
+
+}
