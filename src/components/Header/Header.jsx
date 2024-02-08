@@ -12,7 +12,7 @@ export default function Header() {
 
 
   return (
-    <div className={style.header}>
+    <header className={style.header}>
       {/* Header left side */}
     <HeaderLeftSide/>
           {/* Header center */}
@@ -23,6 +23,6 @@ export default function Header() {
    
         
     
-    </div>
+    </header>
   )
 }

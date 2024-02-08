@@ -1,0 +1,22 @@
+.faq{
+
+  min-height: 768px; 
+  background: linear-gradient(360deg, #6B8C49 5%,  #262626 100%), 
+  url('./question-man.png'); 
+  padding-bottom: 25px;
+
+  .faqWrapper{
+    width: 90%;
+    min-height: 768px; 
+    margin: 0 auto;
+    background: url('./question-man.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    
+
+
+  }
+ 
+  
+}

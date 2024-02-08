@@ -3,7 +3,7 @@ import style from './Company.module.scss'
 
 export default function CompanyList() {
   return (
-    <div className={style.list}>
+    <section className={style.list}>
       <div className={style.listTicker}>  
       <div className={style.listTickerWrapper}>
 
@@ -250,6 +250,6 @@ export default function CompanyList() {
    
 
       </div>
-    </div>
+    </section>
   )
 }

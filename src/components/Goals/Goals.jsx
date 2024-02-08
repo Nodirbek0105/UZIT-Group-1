@@ -1,10 +1,46 @@
-import React from 'react'
-import style from './Goals.module.scss'
+import React from 'react';
+import style from './Goals.module.scss';
 
 export default function Goals() {
   return (
-    <div className={style.goals}>
-      <h2>fdasfads</h2>
-    </div>
-  )
+    <section className={style.goals}>
+      <h2>Цели</h2>
+      <div className={style.goalsLine}>
+        <div className={style.goalsItem}>
+          <p>
+            Развивать профили <br /> организаций на социальных <br /> платформах и в сети для <br />{' '}
+            привлечения внимания <br />
+            международных <br /> инвесторов и компаний.
+          </p>
+        </div>
+        <div className={style.goalsItem}>
+          <p>
+            IT-экзаменационный центр UZIT <br /> Group предлагает тестирование для <br />{' '}
+            сертификации по GRE, GMAT, ACCA, <br /> CFA, а также сертификации от Microsoft, Google,
+            Facebook, Amazon и других. Экзамены проводятся в партнерстве с мировыми организациями на
+            основе соответствующих соглашений.
+          </p>
+        </div>
+        <div className={style.goalsItem}>
+          <p>
+            IT-аутсорсинг ориентирован на <br /> привлечение иностранных IT <br />
+            -организаций для реализации <br />
+            проектов в Узбекистане и <br /> поддержки молодежи в области IT. <br /> Узбекистан,
+            используя текущие <br />
+            возможности рынка, стремится <br /> развивать свою IT-сферу, <br /> оцененную в 4
+            триллиона <br /> долларов.
+          </p>
+        </div>
+        <div className={style.goalsItem}>
+          <p>
+            Возможности для молодежи <br /> включают в себя работу с <br /> опытными специалистами
+            UZIT <br /> Group, участие в международных <br /> проектах и использование <br />{' '}
+            инновационных технологий. <br /> Узбекистан стремится <br /> продемонстрировать <br />{' '}
+            способности своей молодежи на <br /> мировой IT-арене и <br />
+            стимулировать их интерес к <br /> IT-сфере.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 }
