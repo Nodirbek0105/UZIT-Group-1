@@ -1,58 +1,41 @@
-import React from 'react';
-import './Sphere.scss';
-
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
-export default function Sphere() {
-  const sphereRef = React.useRef();
+// Set up the scene, camera, and renderer
+
+import React from 'react';
+
+export default function Sphere2() {
+  const sphere2 = React.useRef(null);
 
   React.useEffect(() => {
-    // Texture loader
-    const loader = new THREE.TextureLoader();
-    const cross = loader.load('./cross.png');
+    const textureLoader = new THREE.TextureLoader();
 
-    // Canvas
+    const normalTexture = textureLoader.load('./normalMap.jpg');
+
     const canvas = document.querySelector('canvas.webgl');
 
     // Scene
     const scene = new THREE.Scene();
 
     // Objects
-    const geometry = new THREE.SphereGeometry(0.6, 60, 60);
-
-    const particleGeometry = new THREE.BufferGeometry();
-    const particlesCnt = 5000;
-
-    const posArray = new Float32Array(particlesCnt * 3);
-
-    for (let i = 0; i < particlesCnt * 3; i++) {
-      posArray[i] = (Math.random() - 0.5) * 5;
-    }
-
-    particleGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-
+    const geometry = new THREE.SphereGeometry(0.5, 32, 32);
     // Materials
 
-    const material = new THREE.PointsMaterial({
-      size: 0.01,
-    });
-
-    const particlesMaterial = new THREE.PointsMaterial({
-      size: 0.009,
-      map: cross,
-      transparent: true,
-    });
+    const material = new THREE.MeshStandardMaterial();
+    material.metalness = 0.1;
+    material.roughness = 0.8;
+    material.normalMap = normalTexture;
+    material.color = new THREE.Color(0xffffff);
 
     // Mesh
-    const sphere = new THREE.Points(geometry, material);
-    const particleMesh = new THREE.Points(particleGeometry, particlesMaterial);
-    scene.add(sphere, particleMesh);
+    const sphere = new THREE.Mesh(geometry, material);
+    scene.add(sphere);
 
     // Lights
 
-    const pointLight = new THREE.PointLight(0xffffff, 0.1);
-    pointLight.position.x = 6;
+    const pointLight = new THREE.PointLight(0xffffff, 2);
+    pointLight.position.x = 2;
     pointLight.position.y = 3;
     pointLight.position.z = 4;
     scene.add(pointLight);
@@ -84,8 +67,8 @@ export default function Sphere() {
      */
     // Base camera
     const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100);
-    camera.position.x = -1;
-    camera.position.y = -0.1;
+    camera.position.x = 0;
+    camera.position.y = 0;
     camera.position.z = 2;
     scene.add(camera);
 
@@ -98,21 +81,10 @@ export default function Sphere() {
      */
     const renderer = new THREE.WebGLRenderer({
       canvas: canvas,
+      alpha: true,
     });
     renderer.setSize(sizes.width, sizes.height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    renderer.setClearColor(new THREE.Color('#262626'), 1);
-
-    // mouse
-    document.addEventListener('mousemove', animetaParticles);
-
-    let mouseX = 0;
-    let mouseY = 0;
-
-    function animetaParticles(event) {
-      mouseX = event.clientX;
-      mouseY = event.clientY;
-    }
 
     /**
      * Animate
@@ -126,11 +98,6 @@ export default function Sphere() {
       // Update objects
       sphere.rotation.y = 0.5 * elapsedTime;
 
-      if (mouseX > 0) {
-        particleMesh.rotation.y = mouseY * (elapsedTime * 0.00008);
-        particleMesh.rotation.x = -mouseX * (elapsedTime * 0.00008);
-      }
-
       // Update Orbital Controls
       // controls.update()
 
@@ -143,7 +110,6 @@ export default function Sphere() {
 
     tick();
   }, []);
-
   return (
     <div className="flex items-center w-full h-fit overflow-hidden">
       <canvas className="webgl"></canvas>

@@ -3,7 +3,9 @@ import style from './Button.module.scss';
 
 export default function Button({ children, width, height, font, ...props }) {
   const buttonStyle = {
+    position: 'relative',
     display: 'flex',
+    outline: 'none',
     alignItems: 'center',
     justifyContent: 'center',
     width: width,
@@ -14,5 +16,9 @@ export default function Button({ children, width, height, font, ...props }) {
     textAlign: 'center',
   };
 
-  return <button {...props} style={buttonStyle}>{children}</button>;
+  return (
+    <button {...props} style={buttonStyle} className={style['btn-5']}>
+      {children}
+    </button>
+  );
 }

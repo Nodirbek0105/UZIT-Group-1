@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Suspense} from 'react';
 import './app.scss';
 import Preloader from './components/Preloader/Preloader';
 import { Route, Routes } from 'react-router';
@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 
 export function App() {
 
-
+  
   React.useEffect(() => {
     AOS.init();
   });
@@ -27,12 +27,14 @@ export function App() {
   // },[])
 
   return (
-    <>
-      <Routes>
+    <Suspense fallback='loading'>
+            <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
         </Route>
       </Routes>
-    </>
+    </Suspense>
+
+    
   );
 }

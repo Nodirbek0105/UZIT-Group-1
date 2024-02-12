@@ -5,8 +5,11 @@ import Sphere from '../Nova/Sphere';
 import { TweenMax } from 'gsap/gsap-core';
 import gsap from 'gsap';
 import Button from '../Button/Button';
+import Sphere2 from '../Sphere2/Sphere2';
+import { useTranslation } from 'react-i18next';
 
 export default function MainPage() {
+  const { t } = useTranslation();
   return (
     <div className={style.mainPage}>
       <div className="w-[60%] z-10">
@@ -15,21 +18,18 @@ export default function MainPage() {
           {' '}
           <span>UZ</span> IT <br /> <p>GROUP</p>{' '}
         </h1>
-        <p className={style.subtitle}>
-          Международная маркетинговая и IT- <br /> компания, которая имеет основную <br /> цель
-          развитие IT-сферы в Узбекистане <br /> и создание возможностей для <br /> молодежи на
-          мировой арене.
-        </p>
+        <p className={style.subtitle}>{t('main.main-text')}</p>
         <div className="mt-[50px]">
           {/* <Button width={280} height={71} font={25}>
             Подробнее
           </Button> */}
           <Button width={291} height={71} font={25}>
-            Подробнее
+            {t('main.button')}
           </Button>
         </div>
       </div>
       <Sphere />
+      {/* <Sphere2 /> */}
     </div>
   );
 }

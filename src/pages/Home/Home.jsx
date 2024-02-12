@@ -10,6 +10,7 @@ import Development from '../../components/Development/Development';
 import FAQ from '../../components/FAQ/FAQ';
 import Questions from '../../components/Questions/Questions';
 import Contacts from '../../components/Contacts/Contacts';
+import Sphere2 from '../../components/Sphere2/Sphere2';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <FAQ />
       <Questions />
       <Contacts />
+      {/* <Sphere2/> */}
     </div>
   );
 }

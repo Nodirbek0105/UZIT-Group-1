@@ -40,9 +40,16 @@
 
 
   .popup{
+    width: fit-content;
+    cursor: pointer;
     position: absolute;
+    right: 0px;
+    left: -20px;
+    top: 40px;
     padding: 15px;
-    border: 1px solid white;
+    border: 1px solid #00FF42;
+    z-index: 10;
+  
   }
   .theme {
     display: flex;
@@ -54,15 +61,15 @@
   .theme__icon {
     transition: transform var(--transDur) ease-in-out;
   }
-  .theme__fill {
-    background: #F2F2F2;
-    display: block;
-    mix-blend-mode: difference;
-    position: fixed;
-    inset: 0;
-    height: 100%;
-    transform: translateX(-100%);
-  }
+  // .theme__fill {
+  //   background: #F2F2F2;
+  //   display: block;
+  //   mix-blend-mode: difference;
+  //   position: fixed;
+  //   inset: 0;
+  //   height: 100%;
+  //   transform: translateX(-100%);
+  // }
   .theme__icon,
   .theme__toggle {
     z-index: 1;
@@ -224,11 +231,85 @@
 }
 
 .share{
+ position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 34px;
   height: 34px;
   background: #00FF42; 
-  border-radius: 50%;
+  border-radius: 50%; 
+  z-index: 10;
+  transition: .5s cubic-bezier(.9,0, .1,1);
+  .shareContent{
+    transition: .5s cubic-bezier(.9,0, .1,1);
+    position: absolute;
+    top: 40px;
+   
+    a{
+      opacity: 0;
+      img{
+        transition: .5s cubic-bezier(.9,0, .1,1);
+        margin-top: 10px;
+      
+      
+        
+       
+      }
+
+    }
+   
+
+    
+
+  }
+
+  &:hover{
+    
+      .shareContent{
+
+        a{
+          animation-name: show;
+          animation-duration: 1s;
+          animation-timing-function: linear;
+         animation-fill-mode: forwards ; 
+     
+
+          &:nth-child(2){
+            animation-delay: 0.3s;
+            
+          }
+          &:nth-child(3){
+            animation-delay: 0.5s;
+            
+          }
+          
+
+        }
+      
+          
+      
+          
+
+        }
+      
+      }
+
+    
+  
+  
+
+}
+
+
+@keyframes show { 
+  from{
+    opacity: 0;
+    transition: .5s cubic-bezier(.9,0, .1,1);
+  }
+  to{
+    opacity: 1;
+    transition: .5s cubic-bezier(.9,0, .1,1);
+  }
+  
 }

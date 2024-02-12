@@ -15,6 +15,8 @@ function fitElementToParent(el, padding) {
   window.addEventListener('resize', resize);
 }
 
+// Баха
+
 var sphereAnimation = (function() {
 
   var sphereEl = document.querySelector('.sphere-animation');

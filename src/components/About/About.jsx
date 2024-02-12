@@ -1,9 +1,11 @@
 import React from 'react';
 import style from './About.module.scss';
+import { useTranslation } from 'react-i18next';
 // import gsap from 'gsap';
 // import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export default function About() {
+  const { t } = useTranslation();
   const imgRef = React.useRef(null);
   // React.useEffect(() => {
   //   const element = imgRef.current;
@@ -23,29 +25,15 @@ export default function About() {
         </div>
 
         <div>
-          <h2>О нас</h2>
-          <p>
-            Международное сотрудничество охватывает <br /> более 100 IT-компаний, а также
-            партнерства с <br />
-            международными ноториальными IT- <br /> организациями, фондами и университетами, <br />{' '}
-            такими как T-Hub (основанный Microsoft и <br /> правительством Индии), IT (Институт{' '}
-            <br /> технологий Индии), Гарвардский <br /> университет, Стэнфордский университет,{' '}
-            <br /> MIT, Фонд Билла и Мелинды Гейтса.
-          </p>
+          <h2>{t('about.title')}</h2>
+          <p style={{ whiteSpace: 'pre-line' }}>{t('about.subtitle')}</p>
         </div>
       </div>
 
       <div className={style.aboutRight}>
         <div>
-          <h2>О нас</h2>
-          <p>
-            Международное сотрудничество охватывает <br /> более 100 IT-компаний, а также
-            партнерства с <br />
-            международными ноториальными IT- <br /> организациями, фондами и университетами, <br />{' '}
-            такими как T-Hub (основанный Microsoft и <br /> правительством Индии), IT (Институт{' '}
-            <br /> технологий Индии), Гарвардский <br /> университет, Стэнфордский университет,{' '}
-            <br /> MIT, Фонд Билла и Мелинды Гейтса.
-          </p>
+          <h2>{t('directors.title')}</h2>
+          <p style={{ whiteSpace: 'pre-line' }}>{t('directors.subtitle')}</p>
         </div>
         <img data-aos="fade-left" src="./about-right.png" alt="" />
       </div>
