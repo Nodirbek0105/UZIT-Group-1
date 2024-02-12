@@ -55,7 +55,7 @@ export default function Contacts() {
               <div className="mt-[70px]">
                 {' '}
                 <Button font={24} width={184} height={52}>
-                  Google maps
+                  <a href='https://www.google.com/maps/dir//%D0%9C%D0%B5%D0%B6%D0%B4%D1%83%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9+%D0%B0%D1%8D%D1%80%D0%BE%D0%BF%D0%BE%D1%80%D1%82+%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4+(Air+Marakanda),+%D1%83%D0%BB.+%D0%98%D0%B1%D0%BD+%D0%A1%D0%B8%D0%BD%D0%BE+1,+140151,+Samarkand,+%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%BA%D0%B0%D0%BD%D0%B4%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@39.6992192,66.9848852,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3f4d186f52c226fd:0x116671ede6eaae78!2m2!1d66.9848852!2d39.6992192?entry=ttu'>Google maps</a> 
                 </Button>
               </div>
             </div>
