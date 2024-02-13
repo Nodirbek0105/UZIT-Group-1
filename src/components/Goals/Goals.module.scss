@@ -74,3 +74,23 @@
     }
   }
 }
+@media screen and (max-width: 1320px) {
+  .goals {
+    .goalsLine {
+      .goalsItem {
+        &:nth-child(1) {
+          left: -15%;
+        } 
+        &:nth-child(2) {
+          left: 20%;
+        }
+        &:nth-child(3) {
+          left: 65%;
+        }
+        &:nth-child(4) {
+          left: 25%;
+        }
+      }
+    }
+  }
+}

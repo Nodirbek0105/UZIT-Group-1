@@ -36,3 +36,14 @@ overflow: hidden;
 
 
 }
+
+@media screen and (max-width: 1444px) {
+  .about{
+    .aboutRight{  
+      img{
+        width: 65%;
+      }
+    }
+  }
+}
+
