@@ -1,28 +1,47 @@
 import React from 'react';
 import styles from './Services.module.scss';
 import Tarrifs from './Tarrifs';
-
-
+import { useTranslation } from 'react-i18next';
+import { tariffsItem } from './data.js';
 
 export default function Services() {
- 
+  const { t } = useTranslation();
+
+  const tarriffArray1 = t('services.tarrifs1', { returnObjects: true });
+  const tarriffArray2 = t('services.tarrifs2', { returnObjects: true });
+  const tarriffArray3 = t('services.tarrifs3', { returnObjects: true });
+
+  const tarriffImg1 = tariffsItem[0].services.map((img) => img);
+  const tarriffImg2 = tariffsItem[1].services.map((img) => img);
+  const tarriffImg3 = tariffsItem[2].services.map((img) => img);
+
+  // const tarriffTitle2 = t('services.tarrifs2', { returnObjects: true });
+
   return (
     <section className={styles.services}>
       <div className={styles.servicesWrapper}>
         {' '}
-        <h2 className={styles.servicesTitle}>Услуги</h2>{' '}
-        <p className={styles.servicesSubtitle}>
-          Ознакомьтесь с нашими гибкими тарифами, предлагающими разнообразные варианты
-          сотрудничества. Независимо от вашего бюджета или масштаба проекта, мы готовы предоставить
-          высококачественные IT-решения и цифровые маркетинговые услуги. Наши тарифы адаптированы
-          под различные потребности, обеспечивая эффективное взаимодействие и взаимовыгодное
-          сотрудничество. Развивайтесь с UZIT Group - вашим надежным партнером в мире технологий.
-        </p>
-
+        <h2 className={styles.servicesTitle}>{t('services.title')}</h2>{' '}
+        <p className={styles.servicesSubtitle}>{t('services.subtitle')}</p>
       </div>
-      
-
-     <Tarrifs/> 
+      <div className={styles.tarrifsWrapper}>
+        {' '}
+        <Tarrifs
+          description={tarriffArray1[0].services}
+          title={tarriffArray1[0].title}
+          img={tarriffImg1}
+        />
+        <Tarrifs
+          description={tarriffArray2[0].services}
+          title={tarriffArray2[0].title}
+          img={tarriffImg2}
+        />
+        <Tarrifs
+          description={tarriffArray3[0].services}
+          title={tarriffArray3[0].title}
+          img={tarriffImg3}
+        />
+      </div>
     </section>
   );
 }

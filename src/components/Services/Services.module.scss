@@ -1,6 +1,6 @@
 .services{
   background: linear-gradient(360deg, #262626 5%, #6B8C49 100%);
-  height: fit-content; 
+  height: 100%; 
 
   padding-bottom: 120px;
   .servicesWrapper{
@@ -29,17 +29,19 @@
     
       display: flex;
       justify-content: space-between;
-      height: fit-content;
+      min-height: 100%;
       width: 80%;
       margin: auto; 
       margin-top: 35px;
+
 
 
   
       .tarrifsItem{
         position: relative;
         width: 400px;
-        height: fit-content; 
+        
+        height: 470px; 
         padding-bottom: 25px;
         background-color: #262626;
         box-shadow: 0px 5px 5px rgb(26, 25, 25);
@@ -63,7 +65,14 @@
 
         }
         .tarrifsBlock{
+          display: flex;
+          flex-direction: column;
           margin-top: 80px;
+          padding-bottom: 80px;
+          min-height: 100%;
+          .tarrifsFirst{
+            flex: 1 1 auto;
+          }
           img{
             width: 20px;
             height: 20px;
@@ -74,7 +83,7 @@
             border: 1px solid #6B8C49;
             font-size: 25px;
             color: #fff;
-            margin-top: 37px;
+         
             font-weight: 700;
             cursor: pointer;
             margin-left: 50%; 

@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './Contacts.module.scss';
 import Button from '../Button/Button.jsx';
+import { useLocation } from 'react-router';
 
 export default function Contacts() {
+  const {t} = useLocation()
   return (
     <section className={styles.contacts}>
       <h1 className="text-[90px] font-bold">Наши контакты</h1>

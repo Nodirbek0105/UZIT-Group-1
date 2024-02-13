@@ -39,32 +39,36 @@ export const tariffsItem = [
     title: 'Кумуш Хамкор',
     services: [
       {
-        img: './services/1.png',
+        img: './services/plus.png',
         description:
           'СММ услуги(Telegram, Youtube, Instagram,Facebook, Twitter,VK,OK, LinkedIn) ',
       },
       {
-        img: './services/2.png',
+        img: './services/8.png',
         description: 'Создание Видео и Фото',
       },
       {
-        img: './services/3.png',
+        img: './services/9.png',
         description: 'Быть в тренде ',
       },
       {
-        img: './services/4.png',
+        img: './services/10.png',
         description: 'Таргет реклама',
       },
       {
-        img: './services/5.png',
+        img: './services/11.png',
         description: 'Цифровой маркетинг',
       },
       {
-        img: './services/6.png',
+        img: './services/12.png',
         description: 'Годовой контент (Создание плана)',
       },
       {
-        img: './services/7.png',
+        img: './services/13.png',
+        description: 'Мультиязычность контента',
+      },
+      {
+        img: './services/14.png',
         description: 'Мультиязычность контента',
       },
       // {
@@ -108,34 +112,31 @@ export const tariffsItem = [
     title: 'Олтин Хамкор',
     services: [
       {
-        img: './services/1.png',
+        img: './services/plus.png',
         description:
           'СММ услуги(Telegram, Youtube, Instagram,Facebook, Twitter,VK,OK, LinkedIn) ',
       },
       {
-        img: './services/2.png',
+        img: './services/15.png',
         description: 'Создание Видео и Фото',
       },
       {
-        img: './services/3.png',
+        img: './services/16.png',
         description: 'Быть в тренде ',
       },
       {
-        img: './services/4.png',
+        img: './services/17.png',
         description: 'Таргет реклама',
       },
       {
-        img: './services/5.png',
+        img: './services/18.png',
         description: 'Цифровой маркетинг',
       },
       {
-        img: './services/6.png',
+        img: './services/19.png',
         description: 'Годовой контент (Создание плана)',
       },
-      {
-        img: './services/7.png',
-        description: 'Мультиязычность контента',
-      },
+     
     ],
   },
 ];
