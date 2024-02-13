@@ -1,49 +1,75 @@
-.about{
- width: 100%;
- height: fit-content;
- padding-bottom: 66px; 
- padding-top: 45px;
-//  height: 1400px;
-overflow: hidden;
- background: linear-gradient(180deg, #262626 14.46%, #6B8C49 100%);
+.about {
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 66px;
+  padding-top: 45px;
+  //  height: 1400px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #262626 14.46%, #6b8c49 100%);
 
+  // background: url('./about.png');
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
 
-// background: url('./about.png');
-// background-repeat: no-repeat; 
-// background-position: center;
-// background-size: cover;
-
-  .aboutLeft{
+  .aboutLeft {
     display: flex;
-       
   }
-  h2{
-    font-size: 100px; 
-    font-weight: 700; 
+  h2 {
+    font-size: 100px;
+    font-weight: 700;
     line-height: 100px;
-
   }
-  p{
+  p {
     font-size: 29px;
     font-weight: 700;
     margin-top: 25px;
   }
-  .aboutRight{
-    display: flex; 
+  .aboutRight {
+    display: flex;
     justify-content: space-between;
     padding-left: 135px;
   }
-
-
 }
 
 @media screen and (max-width: 1444px) {
-  .about{
-    .aboutRight{  
-      img{
+  .about {
+    .aboutRight {
+      img {
         width: 65%;
       }
     }
   }
 }
 
+@media screen and (max-width: 1280px) {
+  .about {
+    h2 {
+      font-size: 90px;
+    }
+    p {
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 1152px) {
+  .about {
+    h2 {
+      font-size: 82px;
+    }
+    p {
+      font-size: 27px;
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .about {
+    h2 {
+      font-size: 78px;
+    }
+    p{
+      font-size: 24px;
+    }
+  }
+}
