@@ -31,15 +31,17 @@ export default function HeaderRightSide() {
     },
   ];
   const [selectLanguage, setSelectLanguage] = React.useState('RU');
+  console.log(selectLanguage);
+  // React.useState(() => {
 
-  React.useState(() => {
-    const data = JSON.parse(localStorage.getItem('language'));
-    setSelectLanguage(data);
-  }, []);
+  //     const data = JSON.parse(localStorage.getItem('language'));
+  //     setSelectLanguage(data);
 
-  React.useEffect(() => {
-    localStorage.setItem('language', JSON.stringify(selectLanguage));
-  }, [selectLanguage]);
+  // }, []);
+
+  // React.useEffect(() => {
+  //   localStorage.setItem('language', JSON.stringify(selectLanguage));
+  // }, [selectLanguage]);
 
   function handlePopup() {
     setIsPopup(!isPopup);

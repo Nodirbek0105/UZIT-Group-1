@@ -1,13 +1,14 @@
 import React from 'react';
 import styles from './Contacts.module.scss';
 import Button from '../Button/Button.jsx';
-import { useLocation } from 'react-router';
+
+import { useTranslation } from 'react-i18next';
 
 export default function Contacts() {
-  const {t} = useLocation()
+  const { t } = useTranslation();
   return (
     <section className={styles.contacts}>
-      <h1 className="text-[90px] font-bold">Наши контакты</h1>
+      <h1 className="text-[90px] font-bold">{t('questions.contacts.title')}</h1>
       <div className={styles.contactsWrapper}>
         <div className={styles.contactsLeft}>
           <iframe
@@ -23,7 +24,7 @@ export default function Contacts() {
         <div className={styles.contactsRight}>
           <div className="flex justify-between">
             <div className="flex flex-col gap-2">
-              <h3 className="#F2F2F2 text-[30px] font-bold">Наши номера</h3>
+              <h3 className="#F2F2F2 text-[30px] font-bold">{t('questions.contacts.numbers')}</h3>
               <a
                 className="text-[18px] opacity-[50%] hover:opacity-[100%] font-bold"
                 href="tel:+998905044665">
@@ -34,20 +35,20 @@ export default function Contacts() {
                 href="tel:+998905044665">
                 +998(90)504-46-65
               </a>
-              <h3 className="#F2F2F2 text-[30px] font-bold">Наша почта</h3>
+              <h3 className="#F2F2F2 text-[30px] font-bold">{t('questions.contacts.email')}</h3>
               <a
                 className="text-[18px] opacity-[50%] hover:opacity-[100%] font-bold"
                 href="https://mail.google.com/mail/u/0/#inbox">
                 uzitgroup@gmail.com
               </a>
-              <h3 className="#F2F2F2 text-[30px] font-bold">Адресс</h3>
+              <h3 className="#F2F2F2 text-[30px] font-bold">{t('questions.contacts.adress')}</h3>
               <a className="text-[18px] opacity-[50%] hover:opacity-[100%] font-bold" href="dsa">
                 Ibn Sino, 7, Samarkand, UZ
               </a>
             </div>
             <div className="ml-[120px] pr-[50px]">
-              <h3 className="#F2F2F2 text-[30px] font-bold">Добраться</h3>
-              <span className="opacity-[50%]">до нас можно через</span>
+              <h3 className="#F2F2F2 text-[30px] font-bold">{t('questions.contacts.location')}</h3>
+              <span className="opacity-[50%]">{t('questions.contacts.toGet')}</span>
               <div className="mt-[25px]">
                 {' '}
                 <Button font={24} width={184} height={52}>

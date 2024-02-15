@@ -12,7 +12,7 @@ export default function Form() {
       <textarea type="text" placeholder={t("questions.form3")} />
        
       <Button type="submit" width={461} height={52} font={24}>
-        Записаться
+        {t('questions.button')}
       </Button>
     </form>
   );
