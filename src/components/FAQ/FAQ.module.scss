@@ -1,22 +1,40 @@
-.faq{
-
-  min-height: 768px; 
-  background: linear-gradient(360deg, #6B8C49 5%,  #262626 100%), 
-  url('./question-man.png'); 
+.faq {
+  min-height: 768px;
+  background: linear-gradient(360deg, #6b8c49 5%, #262626 100%), url("./question-man.png");
   padding-bottom: 25px;
 
-  .faqWrapper{
+  .faqWrapper {
     width: 90%;
-    min-height: 768px; 
+    min-height: 768px;
     margin: 0 auto;
-    background: url('./question-man.png');
+    background: url("./question-man.png");
     background-position: right;
     background-repeat: no-repeat;
     margin-top: 50px;
-    
+  }
+}
 
+@media screen and (max-width: 1800px) {
+  .faq {
+    .faqWrapper{
+      background-size: contain;
+      background-position: 110% 0;
+    }
 
   }
- 
-  
 }
+
+@media screen and (max-width: 1520px) {
+  .faqWrapper{
+    transition: background-size 3s ease-in-out background-position 3s ease-in-out;
+  }
+  .faq {
+    button{
+      width: 65%;
+      div{
+        text-align: center;
+      }
+    }
+  }
+}
+

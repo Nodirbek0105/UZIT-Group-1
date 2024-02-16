@@ -11,7 +11,7 @@ export default function Layout() {
   return (
     <>
      
-      <Preloader />
+      {/* <Preloader /> */}
 
       <Header />
       <Outlet />
