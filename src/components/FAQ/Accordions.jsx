@@ -44,7 +44,7 @@ export default function Accordions({ title, answer }) {
             className={`grid overflow-hidden transition-all duration-300 ease-in-out text-[18px] text-start font-bold ${
               accordionOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
             }`}>
-            <div className="overflow-hidden whitespace-pre-line">{answer}</div>
+            <div className="overflow-hidden whitespace-pre-line pb-[10px]">{answer}</div>
           </div>
           {/* <p className={`transition duration-200 ease-out block ${accordionOpen ? 'hidden' : ''}`}>
             dsaasd

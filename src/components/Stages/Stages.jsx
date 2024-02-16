@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './Stages.module.scss';
+import { useTranslation } from 'react-i18next';
 export default function Stages() {
   const [startAnimation, setStartAnimation] = React.useState(false);
-
+  const { t } = useTranslation();
   React.useEffect(() => {
     window.addEventListener('scroll', () => {
       const scrollY = window.pageYOffset;
@@ -14,7 +15,7 @@ export default function Stages() {
 
   return (
     <section className={styles.stages}>
-      <h2 className={styles.stagesTitle}>Этапы разработки</h2>
+      <h2 className={styles.stagesTitle}>{t('stages.title')}</h2>
       <div className={styles.stagesLineWrapper}>
         {/* 1 */}
         <div className="w-[20%] relative">
@@ -23,7 +24,7 @@ export default function Stages() {
             className={`absolute top-[-35px] left-[-50px] text-[#5DC792] font-bold text-[18px] ${
               startAnimation ? styles.activeCircle : ''
             }`}>
-            Проектирование
+            {t('stages.stages1')}
           </h2>
           <div className="flex items-center w-full">
             <div className={`${styles.stagesCircle} ${startAnimation ? styles.activeCircle : ''}`}>
@@ -43,7 +44,7 @@ export default function Stages() {
             className={`absolute opacity-0 top-[-35px] left-[-15px] text-[#5DC792] font-bold text-[18px] ${
               startAnimation ? styles.activeCircleSecond : ''
             }`}>
-            Дизайн
+            {t('stages.stages2')}
           </h2>
           <div className="flex items-center w-full">
             <div
@@ -66,7 +67,7 @@ export default function Stages() {
             className={`absolute opacity-0 top-[-35px] left-[-20px] text-[#5DC792] font-bold text-[18px] ${
               startAnimation ? styles.activeCircleThird : ''
             }`}>
-            Верстка
+            {t('stages.stages3')}
           </h2>
           <div className="flex items-center w-full">
             <div
@@ -88,7 +89,7 @@ export default function Stages() {
             className={`absolute opacity-0 top-[-35px] left-[-70px] text-[#5DC792] font-bold text-[18px] ${
               startAnimation ? styles.activeCircleFour : ''
             }`}>
-            Программирование
+            {t('stages.stages4')}
           </h2>
           <div className="flex items-center w-full">
             <div
@@ -108,7 +109,7 @@ export default function Stages() {
             className={`absolute opacity-0 top-[-35px] left-[-50px] text-[#5DC792] font-bold text-[18px] ${
               startAnimation ? styles.activeCircleFive : ''
             }`}>
-            Тестирование
+            {t('stages.stages5')}
           </h2>
           <div className="flex items-center w-full">
             <div
@@ -130,7 +131,7 @@ export default function Stages() {
             className={`absolute opacity-0 top-[-35px] left-[-40px] text-[#5DC792] font-bold text-[18px] ${
               startAnimation ? styles.activeCircleSix : ''
             }`}>
-            Поддержка
+            {t('stages.stages6')}
           </h2>
           <div className="flex items-center w-full">
             <div
@@ -141,17 +142,7 @@ export default function Stages() {
         </div>
       </div>
       <div className="m-auto w-[80%]">
-        <p className="text-start text-[19px] font-bold mt-[50px]">
-          Разработка программного продукта - это сложный и многотапный процесс, начинающийся с
-          постановки задачи. На этапе анализа определяются требования пользователей, а
-          проектирование включает в себя разработку структуры и архитектуры продукта. Затем команда
-          разработчиков реализует код и проводит тщательное тестирование для выявления и исправления
-          ошибок. После успешного завершения тестирования происходит внедрение продукта в рабочую
-          среду. Важным этапом является сопровождение, включающее в себя обучение пользователей и
-          предоставление технической поддержки. Весь процесс направлен на создание эффективного и
-          качественного программного продукта, который соответствует задачам и потребностям
-          клиентов.
-        </p>
+        <p className="text-start text-[19px] font-bold mt-[50px]">{t('stages.subtitle')}</p>
       </div>
     </section>
   );

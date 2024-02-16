@@ -3,29 +3,37 @@ import styles from './Services.module.scss';
 import { tariffsItem } from './data.js';
 import Button from '../Button/Button.jsx';
 
-export default function Tarrifs() {
+export default function Tarrifs({ title, description, img }) {
+  const combinedArray = description.map((item, index) => ({
+    desc: item,
+    imgArray: img[index],
+  }));
+  console.log(description);
   return (
-    <div className={styles.tarrifsWrapper}>
-      {tariffsItem.map((item) => (
-        <div className={styles.tarrifsItem}>
-          <div className={styles.tarrifsItemTitle}>
-            <h2>{item.title}</h2>
-          </div>
-          <div className={styles.tarrifsBlock}>
-            {item.services.map((serv) => (
+    <>
+      <div className={styles.tarrifsItem}>
+        <div className={styles.tarrifsItemTitle}>
+          <h2>{title}</h2>
+        </div>
+        <div className={styles.tarrifsBlock}>
+          <div className={styles.tarrifsFirst}>
+            {' '}
+            {combinedArray.map((item) => (
               <div className="flex items-center mt-[5px] pl-[15px]">
-                <img src={serv.img} alt="img" />
+                <img src={item?.imgArray?.img} alt="img" />
+
                 <span className="text-[18px] opacity-[80%] ml-[5px] font-medium">
-                  {serv.description}
+                  {item.desc.description}
                 </span>
               </div>
             ))}
-          
-              <button>Подробнее</button>
-           
+          </div>
+          <div>
+            {' '}
+            <button>Подробнее</button>
           </div>
         </div>
-      ))}
-    </div>
+      </div>
+    </>
   );
 }

@@ -1,15 +1,13 @@
-import React, {Suspense} from 'react';
+import React, { Suspense } from 'react';
 import './app.scss';
 import Preloader from './components/Preloader/Preloader';
 import { Route, Routes } from 'react-router';
 import Layout from './components/Layout/Layout';
 import Home from './pages/Home/Home';
 import AOS from 'aos';
-import "aos/dist/aos.css";
+import 'aos/dist/aos.css';
 
 export function App() {
-
-  
   React.useEffect(() => {
     AOS.init();
   });
@@ -27,14 +25,12 @@ export function App() {
   // },[])
 
   return (
-    <Suspense fallback='loading'>
-            <Routes>
+    <Suspense fallback="loading">
+      <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
         </Route>
       </Routes>
     </Suspense>
-
-    
   );
 }
