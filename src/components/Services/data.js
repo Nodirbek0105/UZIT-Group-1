@@ -136,6 +136,10 @@ export const tariffsItem = [
         img: './services/19.png',
         description: 'Годовой контент (Создание плана)',
       },
+      {
+        img: './services/20.png',
+        description: 'Годовой контент (Создание плана)',
+      },
      
     ],
   },

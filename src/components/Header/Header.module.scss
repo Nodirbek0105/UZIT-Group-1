@@ -30,6 +30,11 @@
       }
     }
   }
+  .headerRight{
+    display: flex; 
+    align-items: center; 
+
+  }
 
   .popup {
     width: fit-content;
@@ -215,6 +220,7 @@
   }
 }
 
+
 .share {
   position: relative;
   display: flex;
@@ -274,10 +280,33 @@
     ul {  
       a {
         li{
-          margin-left: 30px;
+          margin-left: 20px;
         }
       }
     }
   }
 }
-@media screen and (max-width: 1152px) {}
+@media screen and (max-width: 1024px) {
+  .header{
+    .headerRight{
+      display: none;
+    }
+    .theme{
+      display: none;
+    }
+    .share{
+      display: none;
+    }
+    ul {
+      a {
+        li {
+          display: none;
+        }
+      }
+    }
+
+  }
+
+
+  
+}

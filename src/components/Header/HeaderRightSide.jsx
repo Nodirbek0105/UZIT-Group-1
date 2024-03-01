@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Header.module.scss';
 import ToggleTheme from './ToggleTheme';
 import { useTranslation } from 'react-i18next';
+import BurgerIcon from '../Burger/BurgerIcon';
 
 export default function HeaderRightSide() {
   const { t, i18n } = useTranslation();
@@ -49,11 +50,11 @@ export default function HeaderRightSide() {
   return (
     <>
       {' '}
-      <div className="flex items-center">
+      <div className={style.headerRight}>
         {/* <button onClick={() => changeLanguage('ru')}>ru</button>
         <button onClick={() => changeLanguage('en')}>ru</button> */}
 
-        <div className="relative mr-[60px]">
+        <div className="relative mr-[30px] xl:mr-[60px]">
           <div onClick={handlePopup} className="flex items-center">
             <span className="text-[18px] font-normal cursor-pointer">{selectLanguage}</span>
             <img src="./handle-button.png" alt="" />

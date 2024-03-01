@@ -11,7 +11,7 @@
       font-size: 62px;
       font-weight: 700;
       text-align: center;
-      margin-top: 25px;
+  
     }
     .servicesSubtitle {
       font-size: 18px;
@@ -31,7 +31,8 @@
     .tarrifsItem {
       position: relative;
       width: 400px;
-      height: fit-content;
+      height: 480px;
+      // height: fit-content;
       padding-bottom: 25px;
       background-color: #262626;
       box-shadow: 0px 5px 5px rgb(26, 25, 25);
@@ -53,18 +54,25 @@
         }
       }
       .tarrifsBlock {
+        display: flex;
+        align-items: center; 
+        flex-direction: column;
         margin-top: 80px;
+        height: 100%; 
+        padding-bottom: 75px;
         img {
           width: 20px;
           height: 20px;
         }
         button {
+          margin-top: auto;
+         
           width: 219px;
           height: 52px;
           border: 1px solid #6b8c49;
           font-size: 25px;
           color: #fff;
-          margin-top: 37px;
+          // margin-top: 37px;
           font-weight: 700;
           cursor: pointer;
           margin-left: 50%;

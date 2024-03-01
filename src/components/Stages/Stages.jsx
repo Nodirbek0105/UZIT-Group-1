@@ -86,7 +86,7 @@ export default function Stages() {
         <div className="w-[20%] relative">
           {' '}
           <h2
-            className={`absolute opacity-0 top-[-35px] left-[-70px] text-[#5DC792] font-bold text-[18px] ${
+            className={`absolute opacity-0 top-[-35px] left-[8%] translate-x-[-50%] text-[#5DC792] font-bold text-[18px] ${
               startAnimation ? styles.activeCircleFour : ''
             }`}>
             {t('stages.stages4')}
@@ -106,7 +106,7 @@ export default function Stages() {
         <div className="w-[20%] relative">
           {' '}
           <h2
-            className={`absolute opacity-0 top-[-35px] left-[-50px] text-[#5DC792] font-bold text-[18px] ${
+            className={`absolute opacity-0 top-[-35px] left-[8%] translate-x-[-50%]  text-[#5DC792] font-bold text-[18px] ${
               startAnimation ? styles.activeCircleFive : ''
             }`}>
             {t('stages.stages5')}

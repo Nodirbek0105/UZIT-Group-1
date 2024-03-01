@@ -23,31 +23,65 @@
     .teamWrapperRight {
       position: relative;
       width: 60%;
+      transition: 500ms;
+      overflow: hidden;
 
-      &::after {
-        content: "";
-        width: 520px;
-        height: 629px;
-        background: green;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
-      }
+      // &::after {
+      //   content: "";
+      //   width: 520px;
+      //   height: 629px;
+      //   background: #6B8C49;
+      //   position: absolute;
+      //   top: 50%;
+      //   left: 50%;
+      //   transform: translate(-50%, -50%);
+      //   z-index: -1;
+      //   transition: 500ms;
+      // }
       img {
         height: 500px;
         max-width: 900px;
         margin-top: 90px;
         margin-left: 50%;
         transform: translate(-50%);
-
         z-index: 2;
-
         //  margin-top: 50px;
       }
+
     }
   }
+}
+.afterClass{
+  &::after{
+    content: "";
+    width: 520px;
+    height: 680px;
+    background: #6B8C49;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -145%);
+    z-index: -1;
+    transition: 500ms ease-out;
+    animation-name: show;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    
+
+  } 
+
+}
+@keyframes show { 
+  from{
+    transform: translate(-50%, -145%); 
+    transition: 500ms ease-out;
+  }
+  to{
+    transform: translate(-50%, -50%);
+   
+  }
+  
 }
 
 @media screen and (max-width: 1540px) {

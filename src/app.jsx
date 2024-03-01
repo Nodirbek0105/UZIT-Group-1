@@ -6,8 +6,11 @@ import Layout from './components/Layout/Layout';
 import Home from './pages/Home/Home';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ThemeCTX from './context/ThemeCTX';
 
 export function App() {
+  const [openBurger, setOpenBurger] = React.useState(false);
+  // const [modalActive, setModalActive] = React.useState(true);
   React.useEffect(() => {
     AOS.init();
   });
@@ -25,12 +28,17 @@ export function App() {
   // },[])
 
   return (
-    <Suspense fallback="loading">
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-        </Route>
-      </Routes>
-    </Suspense>
+    <ThemeCTX>
+      {' '}
+      <Suspense fallback="loading">
+        <Routes>
+          <Route
+            path="/"
+            element={<Layout openBurger={openBurger} setOpenBurger={setOpenBurger} />}>
+            <Route index element={<Home />} />
+          </Route>
+        </Routes>
+      </Suspense>
+    </ThemeCTX>
   );
 }

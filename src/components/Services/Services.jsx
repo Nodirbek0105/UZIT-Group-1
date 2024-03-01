@@ -27,16 +27,22 @@ export default function Services() {
       <div className={styles.tarrifsWrapper}>
         {' '}
         <Tarrifs
+          delay="100"
+          aos="fade-up"
           description={tarriffArray1[0].services}
           title={tarriffArray1[0].title}
           img={tarriffImg1}
         />
         <Tarrifs
+          delay="300"
+          aos="fade-up"
           description={tarriffArray2[0].services}
           title={tarriffArray2[0].title}
           img={tarriffImg2}
         />
         <Tarrifs
+          delay="500"
+          aos="fade-up"
           description={tarriffArray3[0].services}
           title={tarriffArray3[0].title}
           img={tarriffImg3}

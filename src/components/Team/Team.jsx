@@ -3,6 +3,16 @@ import style from './Team.module.scss';
 import Button from '../Button/Button';
 import { useTranslation } from 'react-i18next';
 export default function Team() {
+  const [activeBackground, setActiveBackground] = React.useState(true);
+  React.useEffect(() => {
+    window.addEventListener('scroll', () => {
+      const scrollY = window.pageYOffset;
+      if (scrollY > 2345) {
+        setActiveBackground(true);
+      }
+    });
+  }, []);
+
   const { t } = useTranslation();
   return (
     <section className={style.team}>
@@ -14,8 +24,8 @@ export default function Team() {
             {t('team.button')}
           </Button>
         </div>
-        <div className={style.teamWrapperRight}>
-          <img src="./team.jpg" alt="" />
+        <div className={`${style.teamWrapperRight} ${activeBackground ? style.afterClass : ''}`}>
+          <img src="./team.jpg" alt="team" />
         </div>
       </div>
     </section>
