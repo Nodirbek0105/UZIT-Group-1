@@ -1,31 +1,30 @@
-.stages{
-  height: fit-content; 
+.stages {
+  height: fit-content;
   padding-bottom: 35px;
-  .stagesTitle{
+  .stagesTitle {
     font-size: 90px;
     font-weight: 700;
     text-align: center;
   }
-  .stagesLineWrapper{
+  .stagesLineWrapper {
     display: flex;
     align-items: center;
     width: 80%;
-    
+
     margin: auto;
     margin-top: 80px;
-    .stagesCircle{
+    .stagesCircle {
       display: flex;
       align-items: center;
       width: 32px;
-      height: 32px; 
-      background: #5DC792;
+      height: 32px;
+      background: #5dc792;
       justify-content: center;
       border-radius: 50%;
       opacity: 0;
       transition: opacity 1s ease, transform 1s ease;
-     
 
-      .miniCircle{
+      .miniCircle {
         width: 16px;
         height: 16px;
         background: #fff;
@@ -37,13 +36,10 @@
       width: 0%;
       height: 4px;
       transition: 300ms;
-      background: #5DC792 !important;
+      background: #5dc792 !important;
     }
-
   }
-
 }
-
 
 @keyframes line-download {
   0% {
@@ -60,11 +56,9 @@
 @keyframes appear {
   from {
     opacity: 0;
-
   }
   to {
     opacity: 1;
-  
   }
 }
 
@@ -73,7 +67,7 @@
   animation-name: line-download;
   animation-duration: 1s;
   animation-timing-function: linear;
-  animation-fill-mode: forwards; 
+  animation-fill-mode: forwards;
   display: block;
   opacity: 100%;
 }
@@ -85,8 +79,8 @@
   animation-delay: 1.5s;
   opacity: 100%;
   display: block;
-  background:  #5DC792  !important;
-  animation-fill-mode: forwards; 
+  background: #5dc792 !important;
+  animation-fill-mode: forwards;
   /* Добавил стили для сохранения красного фона после завершения анимации */
   width: 15%;
   transition: none;
@@ -98,8 +92,8 @@
   animation-delay: 3s;
   opacity: 100%;
   display: block;
-  background:  #5DC792  !important;
-  animation-fill-mode: forwards; 
+  background: #5dc792 !important;
+  animation-fill-mode: forwards;
   /* Добавил стили для сохранения красного фона после завершения анимации */
   width: 15%;
   transition: none;
@@ -111,8 +105,8 @@
   animation-delay: 4.5s;
   opacity: 100%;
   display: block;
-  background:  #5DC792  !important;
-  animation-fill-mode: forwards; 
+  background: #5dc792 !important;
+  animation-fill-mode: forwards;
   /* Добавил стили для сохранения красного фона после завершения анимации */
   width: 15%;
   transition: none;
@@ -124,29 +118,53 @@
   animation-delay: 6s;
   opacity: 100%;
   display: block;
-  background:  #5DC792  !important;
-  animation-fill-mode: forwards; 
+  background: #5dc792 !important;
+  animation-fill-mode: forwards;
   /* Добавил стили для сохранения красного фона после завершения анимации */
   width: 15%;
   transition: none;
 }
 
+.activeCircle {
+  animation: appear 0.5s ease-in-out forwards;
+}
+.activeCircleSecond {
+  animation: appear 0.5s ease-in-out 1s forwards;
+}
+.activeCircleThird {
+  animation: appear 0.5s ease-in-out 2.5s forwards;
+}
+.activeCircleFour {
+  animation: appear 0.5s ease-in-out 4s forwards;
+}
+.activeCircleFive {
+  animation: appear 0.5s ease-in-out 5.5s forwards;
+}
+.activeCircleSix {
+  animation: appear 0.5s ease-in-out 7s forwards;
+}
 
-.activeCircle{
-  animation: appear 0.5s ease-in-out forwards; 
+// _stages_pfy9u_2
+@media screen and (max-width: 960px) {
+  .stages {
+    .stagesLineWrapper{
+      div{
+        h2{
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
-.activeCircleSecond{
-  animation: appear 0.5s ease-in-out 1s forwards; 
+
+@media screen and (max-width: 864px) {
+  .stages {
+    .stagesTitle{
+      font-size: 64px;
+    }
+    .stagesLineWrapper{
+      width: 85%;
+    }
+  }
 }
-.activeCircleThird{
-  animation: appear 0.5s ease-in-out 2.5s forwards; 
-}
-.activeCircleFour{
-  animation: appear 0.5s ease-in-out 4s forwards; 
-}
-.activeCircleFive{
-  animation: appear 0.5s ease-in-out 5.5s forwards; 
-}
-.activeCircleSix{
-  animation: appear 0.5s ease-in-out 7s forwards; 
-}
+

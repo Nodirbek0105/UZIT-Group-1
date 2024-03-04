@@ -105,3 +105,17 @@
     }
   }
 }
+
+
+
+@media screen and (max-width: 864px) {
+  .services {
+    .tarrifsWrapper {
+      justify-content: center;
+      .tarrifsItem{
+        flex-grow: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

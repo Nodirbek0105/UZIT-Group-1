@@ -35,7 +35,7 @@ export default function About() {
           <h2>{t('directors.title')}</h2>
           <p style={{ whiteSpace: 'pre-line' }}>{t('directors.subtitle')}</p>
         </div>
-        <img data-aos="fade-left" src="./about-right.png" alt="" />
+        <img data-aos="fade-left" src="./about-right.png" alt="картинка про нас. но видимо она не прогрузилась. соре" />
       </div>
     </section>
   );

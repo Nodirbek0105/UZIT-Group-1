@@ -1,24 +1,47 @@
-.development{
-  
-  height: fit-content; 
-  background-color: #262626; 
+.development {
+  height: fit-content;
+  background-color: #262626;
   padding-top: 50px;
   padding-bottom: 35px;
 }
 
-
-
-.developmentWrapper{
+.developmentWrapper {
   display: flex;
   justify-content: space-between;
-  width: 70%; 
+  width: 70%;
   margin: auto;
   margin-top: 25px;
-  
 }
 
 @media screen and (max-width: 1444px) {
-  .developmentWrapper{
+  .developmentWrapper {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .developmentWrapper {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 864px) {
+  .developmentWrapper {
+    flex-direction: column;
+    div {
+      margin-bottom: 20px;
+      width: 100%;
+      h3 {
+        white-space: normal;
+      }
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+      div {
+        button {
+          width: 100% !important;
+        }
+      }
+    }
   }
 }

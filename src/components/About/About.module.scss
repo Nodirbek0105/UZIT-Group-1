@@ -75,3 +75,26 @@
     }
   }
 }
+@media screen and (max-width: 1024px) {
+  .about {
+    .aboutLeft{
+      padding-right: 0;
+    }
+    .aboutRight {
+      padding-left: 60px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 920px) {
+  .about {
+    h2 {
+      font-size: 64px;
+      line-height: 60px;
+    }
+    p{
+      font-size: 20px;
+    }
+  }
+}
