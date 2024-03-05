@@ -7,9 +7,9 @@ export default function Questions() {
   const { t } = useTranslation();
   return (
     <section className={styles.questions}>
-      <div className="w-[90%] m-auto">
-        <h1 className="text-[90px] font-bold">{t('questions.title')}</h1>
-        <div className="flex m-auto justify-between pr-[50px]">
+      <div className="w-[90%] m-auto ques_container">
+        <h2 className="text-[90px] font-bold">{t('questions.title')}</h2>
+        <div className="flex m-auto justify-between pr-[50px] ques_form">
           <Form />
           <img src="./qr-code.png" alt="" />
         </div>

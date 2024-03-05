@@ -8,7 +8,7 @@ export default function Contacts() {
   const { t } = useTranslation();
   return (
     <section className={styles.contacts}>
-      <h1 className="text-[90px] font-bold">{t('questions.contacts.title')}</h1>
+      <h2 className="text-[90px] font-bold">{t('questions.contacts.title')}</h2>
       <div className={styles.contactsWrapper}>
         <div className={styles.contactsLeft}>
           <iframe

@@ -154,3 +154,30 @@
     }
   }
 }
+
+@media screen and (max-width: 768px){
+  .team {
+    h2{
+      font-size: 52px;
+    }
+    .teamWrapper {
+      flex-direction: column-reverse;
+      .teamWrapperLeft {
+        p {
+          white-space: normal !important;
+          padding-top: 0;
+        }
+        button{
+          width: 100% !important;
+        }
+      }
+      .teamWrapperRight{
+        width: 100%;
+        &::after {
+          width: 80%;
+          height: 90%;
+        }
+      }
+    }
+  }
+}

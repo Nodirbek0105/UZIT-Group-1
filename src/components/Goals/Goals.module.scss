@@ -173,6 +173,7 @@
   .goals {
     height: 1300px;
     .goalsLine {
+      background-image: none;
       height: 900px;
       display: flex;
       flex-wrap: wrap;
@@ -208,6 +209,22 @@
          
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .goals {
+    background-image: none;
+    height: fit-content;
+    padding-left: 0;
+    h2{
+      font-size: 52px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .goalsLine{
+      height: 700px;
     }
   }
 }

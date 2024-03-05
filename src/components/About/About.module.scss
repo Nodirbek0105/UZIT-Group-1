@@ -98,3 +98,15 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .about {
+    h2 {
+      font-size: 52px;
+      line-height: 40px;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+}

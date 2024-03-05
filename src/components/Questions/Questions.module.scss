@@ -56,16 +56,35 @@
 @media screen and (max-width: 863px) {
   .questions {
     height: fit-content;
-    .form{
+    div{
+      padding-right: 0;
+    }
+    h2{
+      font-size: 54px;
+      text-align: center;
+    }
+    .form {
+      margin-top: 0px;
       width: 100%;
-      button{
+      margin-bottom: 20px;
+      button {
         width: 100% !important;
       }
     }
-    img{
+    img {
       display: none;
+    }
+    p {
+      margin: 0 auto;
+      width: 90%;
+      text-align: center;
     }
   }
 }
 // object-fit: contain;
 // width: 338px;
+@media screen and (max-width: 720px) {
+  .questions {
+   
+  }
+}
