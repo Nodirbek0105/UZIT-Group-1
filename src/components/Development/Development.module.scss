@@ -12,7 +12,12 @@
   margin: auto;
   margin-top: 25px;
 }
-
+@media screen and (min-width: 2250px) {
+  .development {
+    max-width: 2250px;
+    margin: auto;
+  }
+}
 @media screen and (max-width: 1444px) {
   .developmentWrapper {
     width: 80%;
@@ -20,11 +25,22 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .development {
+    h2 {
+      font-size: 74px !important;
+    }
+  }
   .developmentWrapper {
     width: 90%;
   }
 }
 @media screen and (max-width: 864px) {
+  .development {
+    h2 {
+      font-size: 64px !important;
+    }
+  }
+  
   .developmentWrapper {
     flex-direction: column;
     div {
@@ -42,6 +58,14 @@
           width: 100% !important;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .development {
+    h2 {
+      font-size: 52px !important;
     }
   }
 }

@@ -143,13 +143,18 @@
 .activeCircleSix {
   animation: appear 0.5s ease-in-out 7s forwards;
 }
-
+@media screen and (min-width: 2250px) {
+  .stages {
+    max-width: 2250px;
+    margin: auto;
+  }
+}
 // _stages_pfy9u_2
 @media screen and (max-width: 960px) {
   .stages {
-    .stagesLineWrapper{
-      div{
-        h2{
+    .stagesLineWrapper {
+      div {
+        h2 {
           font-size: 16px;
         }
       }
@@ -159,12 +164,45 @@
 
 @media screen and (max-width: 864px) {
   .stages {
-    .stagesTitle{
+    .stagesTitle {
       font-size: 64px;
     }
-    .stagesLineWrapper{
+    .stagesLineWrapper {
       width: 85%;
     }
   }
 }
 
+@media screen and (max-width: 720px) {
+  .stages {
+    .stagesTitle {
+      font-size: 52px;
+    }
+    .stagesLineWrapper {
+      padding-left: 20px;
+      div {
+        h2 {
+          top: -24px;
+          left: -5px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .stages {
+    .stagesLineWrapper {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .stages {
+    .stagesTitle {
+      font-size: 44px;
+    }
+  }
+}

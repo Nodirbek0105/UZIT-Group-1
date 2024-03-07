@@ -81,7 +81,12 @@
     }
   }
 }
-
+@media screen and (min-width: 2250px){
+  .services {
+    max-width: 2250px;
+    margin: auto;
+  }
+} 
 @media screen and (max-width: 1600px) {
   .services {
     .servicesWrapper {

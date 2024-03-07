@@ -16,7 +16,7 @@ export default function MainPage() {
         {' '}
         <h1 className={style.title}>
           {' '}
-          <span>UZ</span> IT <br /> <p>GROUP</p>{' '}
+          <div className={style.mainTitle}><span>UZ</span> <div>IT</div> </div> <p>GROUP</p>{' '}
         </h1>
         <p className={style.subtitle}>{t('main.main-text')}</p>
         <div className="mt-[50px]">

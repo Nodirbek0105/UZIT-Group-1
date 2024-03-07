@@ -28,6 +28,12 @@
     }
   }
 }
+@media screen and (min-width: 2250px){
+  .contacts {
+    max-width: 2250px;
+    margin: auto;
+  }
+} 
 @media screen and (max-width: 1540px) {
   .contacts {
     .contactsWrapper {
