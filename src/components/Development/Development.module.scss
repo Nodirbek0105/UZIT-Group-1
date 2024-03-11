@@ -40,7 +40,7 @@
       font-size: 64px !important;
     }
   }
-  
+
   .developmentWrapper {
     flex-direction: column;
     div {
@@ -66,6 +66,16 @@
   .development {
     h2 {
       font-size: 52px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .development {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    h2{
+      font-size: 32px !important;
     }
   }
 }

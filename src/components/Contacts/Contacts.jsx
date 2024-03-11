@@ -22,7 +22,7 @@ export default function Contacts() {
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div className={styles.contactsRight}>
-          <div className="flex justify-between">
+          <div className="flex justify-between contact_contaiter">
             <div className="flex flex-col gap-2">
               <h3 className="#F2F2F2 text-[30px] font-bold">{t('questions.contacts.numbers')}</h3>
               <a

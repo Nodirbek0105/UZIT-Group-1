@@ -186,3 +186,33 @@
     }
   }
 }
+
+@media screen and (max-width: 640px){
+  .team {
+    .teamWrapper {
+      .teamWrapperLeft {
+        p {
+          font-size: 18px;
+        }
+      }
+      .teamWrapperRight {
+        img {
+          margin-top: 0;
+        }
+        &::after {
+          width: 70%;
+          height: 70%;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 490px) {
+  .team {
+    h2{
+      font-size: 42px;
+    }
+  }
+}

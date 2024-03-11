@@ -167,3 +167,13 @@
     }
   }
 }
+
+@media screen and (max-width: 490px) {
+  .about {
+    .aboutRight {
+      h2{
+        font-size: 42px;
+      }
+    }
+  }
+}
