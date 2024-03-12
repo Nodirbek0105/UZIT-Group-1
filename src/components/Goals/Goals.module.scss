@@ -3,7 +3,7 @@
   padding-bottom: 90px;
   padding-left: 135px;
   min-height: 920px;
-  background: url("./boss.png");
+  background: url("/boss.png");
   background-repeat: no-repeat;
   background-position: bottom left;
   h2 {
@@ -17,7 +17,8 @@
     height: 720px;
     // height: fit-content;
 
-    background: url("./goals-line.png");
+    background: url("/goals-line.png");
+    
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
