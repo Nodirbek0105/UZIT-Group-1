@@ -1,9 +1,53 @@
 import React from 'react';
 import styles from './Drawer.module.scss';
 import { useTranslation } from 'react-i18next';
+import HeaderRightSide from '../Header/HeaderRightSide';
 
 export default function Drawer({ openBurger }) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [isPopup, setIsPopup] = React.useState(false);
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+    setIsPopup(false);
+  };
+  const languageSelect = [
+    {
+      id: 1,
+      language: 'RU',
+      img: './russian.png',
+      switch: 'ru',
+    },
+    {
+      id: 2,
+      language: 'UZ',
+      img: './uzbekistan.png',
+      switch: 'uz',
+    },
+    {
+      id: 3,
+      language: 'EN',
+      img: './usa.png',
+      switch: 'en',
+    },
+  ];
+  const [selectLanguage, setSelectLanguage] = React.useState('RU');
+  console.log(selectLanguage);
+  // React.useState(() => {
+
+  //     const data = JSON.parse(localStorage.getItem('language'));
+  //     setSelectLanguage(data);
+
+  // }, []);
+
+  // React.useEffect(() => {
+  //   localStorage.setItem('language', JSON.stringify(selectLanguage));
+  // }, [selectLanguage]);
+
+  function handlePopup() {
+    setIsPopup(!isPopup);
+  }
+  // const { t } = useTranslation();
   React.useEffect(() => {
     if (openBurger) {
       window.document.body.style.overflow = 'hidden';
@@ -13,9 +57,29 @@ export default function Drawer({ openBurger }) {
   }, [openBurger]);
   return (
     <div className={`${styles.drawer} ${openBurger ? styles.active : ''}`}>
-      <img src="./Drawer-logo.png" alt="logo" />
+      {/* languages */}
+      <div className="relative mr-[30px] xl:mr-[60px]">
+        <div onClick={handlePopup} className="flex items-center">
+          <span className="text-[18px] mt-[15px] font-normal cursor-pointer">{selectLanguage}</span>
+          <img className="mt-[15px]" src="./handle-button.png" alt="" />
+        </div>
+
+        {isPopup && (
+          <div className={styles.popup}>
+            {languageSelect.map((item) => (
+              <div key={item.id} className="w-fit h-fit pr-[20px] pt-[5px]">
+                <ul className="flex items-start" onClick={() => setSelectLanguage(item.language)}>
+                  <li onClick={() => changeLanguage(item.switch)}>{item.language}</li>
+                  <img className="ml-[5px]" src={item.img} alt="" />
+                </ul>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+      <img className={styles['background-img']} src="./Drawer-logo.png" alt="logo" />
       <div className={styles.drawerLinks}>
-        <ul className="flex items-center flex-col w-[50%] h-fit m-auto z-10 gap-4">
+        <ul className="flex width-[200px] flex-col h-fit m-auto z-10 gap-4">
           <a href="#menu-link">
             <li>{t('header.links1')}</li>
           </a>
@@ -36,6 +100,7 @@ export default function Drawer({ openBurger }) {
           </a>
         </ul>
       </div>
+      {/* <HeaderRightSide /> */}
     </div>
   );
 }

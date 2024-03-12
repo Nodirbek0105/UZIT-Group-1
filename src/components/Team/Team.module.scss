@@ -1,11 +1,13 @@
 .team {
   padding-bottom: 50px;
   padding-top: 25px;
+  
   h2 {
     font-size: 90px;
     font-weight: 700;
     text-align: center;
   }
+
   .teamWrapper {
     display: flex;
     justify-content: space-between;
@@ -24,7 +26,8 @@
       position: relative;
       width: 60%;
       transition: 500ms;
-      overflow: hidden;
+      overflow: hidden; 
+     
 
       // &::after {
       //   content: "";
@@ -50,6 +53,9 @@
     }
   }
 }
+
+
+
 .afterClass {
   &::after {
     content: "";
@@ -68,6 +74,7 @@
     animation-fill-mode: forwards;
   }
 }
+
 @keyframes show {
   from {
     transform: translate(-50%, -145%);

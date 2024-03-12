@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Stages.module.scss';
 import { useTranslation } from 'react-i18next';
+import TextUp from '../Reveal/TextUp';
+import Reveal from '../Reveal/Reveal';
 export default function Stages() {
   const [startAnimation, setStartAnimation] = React.useState(false);
   const { t } = useTranslation();
@@ -15,7 +17,10 @@ export default function Stages() {
 
   return (
     <section className={styles.stages}>
-      <h2 className={styles.stagesTitle}>{t('stages.title')}</h2>
+      <TextUp>
+        <h2 className={styles.stagesTitle}>{t('stages.title')}</h2>
+      </TextUp>
+
       <div className={styles.stagesLineWrapper}>
         {/* 1 */}
         <div className="w-[20%] relative">
@@ -142,7 +147,9 @@ export default function Stages() {
         </div>
       </div>
       <div className="m-auto w-[80%]">
-        <p className="text-start text-[19px] font-bold mt-[50px]">{t('stages.subtitle')}</p>
+        <Reveal>
+          <p className="text-start text-[19px] font-bold mt-[50px]">{t('stages.subtitle')}</p>
+        </Reveal>
       </div>
     </section>
   );

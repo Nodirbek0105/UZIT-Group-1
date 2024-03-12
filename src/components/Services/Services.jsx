@@ -3,6 +3,8 @@ import styles from './Services.module.scss';
 import Tarrifs from './Tarrifs';
 import { useTranslation } from 'react-i18next';
 import { tariffsItem } from './data.js';
+import Reveal from '../Reveal/Reveal.jsx';
+import TextUp from '../Reveal/TextUp.jsx';
 
 export default function Services() {
   const { t } = useTranslation();
@@ -21,8 +23,13 @@ export default function Services() {
     <section className={styles.services}>
       <div className={styles.servicesWrapper}>
         {' '}
-        <h2 className={styles.servicesTitle}>{t('services.title')}</h2>{' '}
-        <p className={styles.servicesSubtitle}>{t('services.subtitle')}</p>
+        <TextUp>
+          <h2 className={styles.servicesTitle}>{t('services.title')}</h2>{' '}
+        </TextUp>
+        <TextUp>
+          {' '}
+          <p className={styles.servicesSubtitle}>{t('services.subtitle')}</p>
+        </TextUp>
       </div>
       <div className={styles.tarrifsWrapper}>
         {' '}

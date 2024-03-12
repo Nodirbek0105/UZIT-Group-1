@@ -54,3 +54,13 @@
   }
 }
 
+@media screen and (max-width: 540px){
+  .list{
+    .listTicker{
+      .listTickerWrapper{
+        gap: 80px;
+
+      }
+    }
+  }
+}

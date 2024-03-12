@@ -10,6 +10,7 @@ export default function HeaderRightSide() {
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
+    setIsPopup(false);
   };
   const languageSelect = [
     {

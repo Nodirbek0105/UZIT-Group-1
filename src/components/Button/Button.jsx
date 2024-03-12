@@ -14,6 +14,7 @@ export default function Button({ children, width, height, font, ...props }) {
     fontWeight: '700',
     fontSize: font,
     textAlign: 'center',
+    color: 'white',
   };
 
   return (
