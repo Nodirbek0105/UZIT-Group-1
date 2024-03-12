@@ -8,7 +8,7 @@ import Reveal from '../Reveal/Reveal';
 export default function Questions() {
   const { t } = useTranslation();
   return (
-    <section className={styles.questions}>
+    <section id='questions' className={styles.questions}>
       <div className="w-[90%] m-auto ques_container">
         <TextUp>
           <h2 className="text-[90px] font-bold">{t('questions.title')}</h2>

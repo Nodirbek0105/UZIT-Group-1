@@ -9,7 +9,7 @@ import Reveal from '../Reveal/Reveal.jsx';
 export default function Contacts() {
   const { t } = useTranslation();
   return (
-    <section className={styles.contacts}>
+    <section id="contacts" className={styles.contacts}>
       <TextUp>
         <h2 className="text-[90px] font-bold">{t('questions.contacts.title')}</h2>
       </TextUp>

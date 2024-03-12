@@ -20,7 +20,7 @@ export default function Services() {
   // const tarriffTitle2 = t('services.tarrifs2', { returnObjects: true });
 
   return (
-    <section className={styles.services}>
+    <section id="services" className={styles.services}>
       <div className={styles.servicesWrapper}>
         {' '}
         <TextUp>

@@ -19,7 +19,7 @@ export default function About() {
   // }, []);
 
   return (
-    <section className={style.about}>
+    <section id='about' className={style.about}>
       <div className={style.aboutLeft}>
         <div className="w-[50%]">
           <img data-aos="fade-right" src="./about-left.png" alt="about-left" />

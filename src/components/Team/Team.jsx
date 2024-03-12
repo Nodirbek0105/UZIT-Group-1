@@ -17,7 +17,7 @@ export default function Team() {
 
   const { t } = useTranslation();
   return (
-    <section className={style.team}>
+    <section id="team" className={style.team}>
       <TextUp>
         <h2>{t('team.title')}</h2>
       </TextUp>
