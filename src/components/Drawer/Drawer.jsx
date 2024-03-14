@@ -59,8 +59,8 @@ export default function Drawer({ openBurger }) {
     <div className={`${styles.drawer} ${openBurger ? styles.active : ''}`}>
       {/* languages */}
       <div className="relative mr-[30px] xl:mr-[60px]">
-        <div onClick={handlePopup} className="flex items-center">
-          <span className="text-[18px] mt-[15px] font-normal cursor-pointer">{selectLanguage}</span>
+        <div  className="flex items-center">
+          <span onClick={handlePopup} className="text-[18px] mt-[15px] font-normal cursor-pointer">{selectLanguage}</span>
           <img className="mt-[15px]" src="./handle-button.png" alt="" />
         </div>
 
