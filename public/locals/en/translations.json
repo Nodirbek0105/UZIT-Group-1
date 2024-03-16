@@ -17,8 +17,8 @@
     "subtitle": "International cooperation encompasses \n more than 100 IT companies, as well as partnerships with\ninternational notorial IT\n organizations, foundations and universities,\nsuch as T-Hub (founded by Microsoft\nand the Government of India), IT (Institute of\nIndia's technology), Harvard\nUniversity, Stanford University,\nMIT, Bill & Melinda Gates Foundation."
   },
   "directors" : {
-    "title" : "Board of Directors",
-      "subtitle" : "includes representatives of\n leading global companies\n(Microsoft, Google, Apple, Tesla, \nAmazon, Twitter, Facebook, \nSamsung) from various fields, \nwhich gives the company \nunique experience."
+    "title" : "Digital marketing",
+      "subtitle" : "This is a section that helps \n organizations in our country \n attract the attention of international \n organizations by developing their \n profile  on the Internet on \n social platforms"
   },
   "team" : {
     "title" : "Our team",
@@ -97,6 +97,23 @@
 
     
 
+  },
+  "programmer" : {
+    "mainTitle" : "Programmer services",
+    "title1" : "Landings",
+    "subtitle1" : "Short and long. Adaptive, loading speed, micro-animations, semantics and SEO markup.",
+    "title2" : "E-commerce stores and corporate websites",
+    "subtitle2" : "Pages with interactive, forms, baskets. Available interfaces for users.",
+    "title3" : "Website redesign",
+    "subtitle3" : "Redesigning existing websites, making adjustments, making the design more attractive and improving functionality", 
+    "title4" : "Telegram bot development",
+    "subtitle4" : "Creation of telegram bots of varying complexity", 
+    "title5" : "Admin Dashboards",
+    "subtitle5" : "There are many graphs and fields where maximum reuse of components is important.", 
+    "title6" : "CRM systems",
+    "subtitle6" : "Creation of various CRM systems for business automation."
+    
+    
   },
   "stages" : {
     "title": "Development Stages", 

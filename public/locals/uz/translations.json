@@ -17,8 +17,8 @@
     "subtitle": "100-dan ortiq IT kompaniyalarin \n bilan xamkorlik yo'lga qo'yilmoqda. \n Qo'shimcha sifatida UZIT Groupda xalqaro\n  Notijorat IT tashkilotlar, Fondlar \n va etuq universitetlar bilan xamkorlik\n qilish imkoniyati mavjud.Misol uchun,\n T-Hub (Microsoft va Hindiston \n hukumati tomonidan asos solingan), \nIT(Hindiston texnologik  instituti),\n Garvard Universiteti,Stenford  Universiteti,\n  MIT, Bill & Melinda Geyts fondi."
   },
   "directors" : {
-    "title" : "Direktorlar kengashi",
-      "subtitle" : "jahonning eng etuq IT kompaniyalarni \n (Microsoft, Google, Apple, Tesla, \nAmazon, Twitter, Facebook, \nSamsung) mutaxassislardan,\niborat bo'ladi"
+    "title" : "Raqamli marketing",
+      "subtitle" : "Бу юртимиздаги ташкилотларнинг \n социал платформаларда \n ва интернет  тармокларида профилни \n ривожлантириб  халкаро ташкилотлар \n этиборини  жалб   килишда \n ердам берувчи   булим "
   },
   "team" : {
     "title" : "Bizni jamoa",
@@ -94,6 +94,26 @@
      
     ]
   },
+
+  "programmer" : {
+    "mainTitle" : "Dasturchi xizmatlari",
+    "title1" : "Lendinglar",
+    "subtitle1" : "Qisqa va uzoq. Moslashuvchan, yuklash tezligi, mikro-animatsiyalar, semantika va SEO belgilari.",
+    "title2" : "Onlayn magazinlar va korporativ veb-saytlar",
+    "subtitle2" : "Interaktiv sahifalar, shakllar, savatlar. Foydalanuvchilar uchun mavjud interfeyslar.",
+    "title3" : "Veb-saytni qayta loyihalash",
+    "subtitle3" : "Mavjud veb-saytlarni qayta loyihalash, tuzatishlar kiritish, dizaynni yanada jozibador qilish va funksionallikni yaxshilash", 
+    "title4" : "Telegram bot yozish",
+    "subtitle4" : "Turli murakkablikdagi telegram botlarini yaratish", 
+    "title5" : "Administrator va boshqaruv paneli",
+    "subtitle5" : "Komponentlarning maksimal qayta ishlatilishi muhim bo'lgan ko'plab grafikalar va maydonlar mavjud.", 
+    "title6" : "CRM tizimi",
+    "subtitle6" : "Biznesni avtomatlashtirish uchun turli xil CRM tizimlarini yaratish."
+    
+    
+  },
+  
+  
 
 
   "stages" : {

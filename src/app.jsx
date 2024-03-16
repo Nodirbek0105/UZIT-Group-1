@@ -19,6 +19,7 @@ export function App() {
     AOS.refresh();
   }, []);
 
+
   // React.useEffect(()=>{
 
   //   window.addEventListener('load', ()=>{

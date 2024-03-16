@@ -36,12 +36,12 @@ export default function Contacts() {
                 <a
                   className="text-[18px] opacity-[50%] hover:opacity-[100%] font-bold"
                   href="tel:+998905044665">
-                  +998(90)504-46-65
+                  +998(33)233-80-80
                 </a>
                 <a
                   className="text-[18px] opacity-[50%] hover:opacity-[100%] font-bold"
                   href="tel:+998905044665">
-                  +998(90)504-46-65
+                  +998(95)233-80-80
                 </a>
                 <h3 className="#F2F2F2 text-[30px] font-bold">{t('questions.contacts.email')}</h3>
                 <a
@@ -51,7 +51,7 @@ export default function Contacts() {
                 </a>
                 <h3 className="#F2F2F2 text-[30px] font-bold">{t('questions.contacts.adress')}</h3>
                 <a className="text-[18px] opacity-[50%] hover:opacity-[100%] font-bold" href="dsa">
-                  Ibn Sino, 7, Samarkand, UZ
+                  Aeroport, Samarkand, UZ
                 </a>
               </div>
               <div className="ml-[120px] pr-[50px]">
