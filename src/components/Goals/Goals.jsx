@@ -7,7 +7,7 @@ export default function Goals() {
   const { t } = useTranslation();
   return (
     <section className={style.goals}>
-      <TextUp>
+        <TextUp delay='0.25'>
         <h2>{t('goals.title')}</h2>
       </TextUp>
 

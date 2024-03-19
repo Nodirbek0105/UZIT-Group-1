@@ -10,7 +10,7 @@ export default function Questions() {
   return (
     <section id='questions' className={styles.questions}>
       <div className="w-[90%] m-auto ques_container">
-        <TextUp>
+      <TextUp delay='0.25'>
           <h2 className="text-[90px] font-bold">{t('questions.title')}</h2>
         </TextUp>
 

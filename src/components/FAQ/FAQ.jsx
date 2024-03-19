@@ -11,7 +11,7 @@ export default function FAQ() {
   return (
     <section className={styles.faq}>
       <div className={styles.faqWrapper}>
-        <TextUp>
+      <TextUp delay='0.25'>
           <h2 className="text-[90px] font-bold mt-[70px]">{t('FAQ.title')}</h2>
         </TextUp>
 

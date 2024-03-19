@@ -17,7 +17,7 @@ export default function Stages() {
 
   return (
     <section className={styles.stages}>
-      <TextUp>
+      <TextUp delay='0.25'>
         <h2 className={styles.stagesTitle}>{t('stages.title')}</h2>
       </TextUp>
 

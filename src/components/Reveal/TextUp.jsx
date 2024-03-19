@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
-export default function TextUp({ children, width = '100%' }) {
+export default function TextUp({ children, width, delay }) {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -21,7 +21,7 @@ export default function TextUp({ children, width = '100%' }) {
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.25 }}>
+        transition={{ duration: 0.5, delay: delay }}>
         {children}
       </motion.div>
     </div>

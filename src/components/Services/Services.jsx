@@ -23,7 +23,7 @@ export default function Services() {
     <section id="services" className={styles.services}>
       <div className={styles.servicesWrapper}>
         {' '}
-        <TextUp>
+        <TextUp delay='0.25'>
           <h2 className={styles.servicesTitle}>{t('services.title')}</h2>{' '}
         </TextUp>
         <TextUp>

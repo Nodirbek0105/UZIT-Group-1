@@ -22,7 +22,7 @@ export default function Sphere() {
     const geometry = new THREE.SphereGeometry(0.6, 60, 60);
 
     const particleGeometry = new THREE.BufferGeometry();
-    const particlesCnt = 5000;
+    const particlesCnt = 2000;
 
     const posArray = new Float32Array(particlesCnt * 3);
 

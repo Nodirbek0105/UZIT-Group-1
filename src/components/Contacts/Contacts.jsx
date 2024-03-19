@@ -10,7 +10,7 @@ export default function Contacts() {
   const { t } = useTranslation();
   return (
     <section id="contacts" className={styles.contacts}>
-      <TextUp>
+      <TextUp delay='0.25'>
         <h2 className="text-[90px] font-bold">{t('questions.contacts.title')}</h2>
       </TextUp>
 
