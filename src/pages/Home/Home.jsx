@@ -12,6 +12,7 @@ import Questions from '../../components/Questions/Questions';
 import Contacts from '../../components/Contacts/Contacts';
 import Sphere2 from '../../components/Sphere2/Sphere2';
 import Programmer from '../../components/Programmer/Programmer';
+import Projects from '../../components/Projects/Projects';
 
 export default function Home() {
   return (
@@ -22,7 +23,8 @@ export default function Home() {
       <Team />
       <Goals />
       <Services />
-      <Programmer/>
+      <Programmer />
+      {/* <Projects /> */}
       <Stages />
       <Development />
       <FAQ />

@@ -37,7 +37,7 @@ export default function Accordions({ title, answer }) {
           />
         </svg>
         <div className="border-b border-white-400 transition duration-200 ease-out">
-          <h3 className="text-[36px] font-bold ml-[5px] transition duration-200 ease-out">
+          <h3 className="text-[30px] font-bold ml-[5px] transition duration-200 ease-out text-left">
             {title}
           </h3>
           <div

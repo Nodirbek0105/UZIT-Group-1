@@ -20,6 +20,8 @@ export default function FAQ() {
           <Accordion title={t('FAQ.mainTitle2')} answer={t('FAQ.answer2')} />
           <Accordion title={t('FAQ.mainTitle3')} answer={t('FAQ.answer3')} />
           <Accordion title={t('FAQ.mainTitle4')} answer={t('FAQ.answer4')} />
+          <Accordion title={t('FAQ.mainTitle5')} answer={t('FAQ.answer5')} />
+     
         </TextUp>
       </div>
     </section>

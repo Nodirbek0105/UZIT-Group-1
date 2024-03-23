@@ -3,7 +3,7 @@
     "links1" : "Biz haqimizda",
     "links2" : "Jamoa",
     "links3" : "Xizmatlar",
-    "links4" : "Sharhlar",
+    "links4" : "Proektlar",
     "links5" : "Kontaktlar",
     "links6" : "Savollar"
 
@@ -138,14 +138,16 @@
   },
   "FAQ" :{
     "title" : "FAQ",
-    "mainTitle1" : "Imtihon topshirish uchun qanday hujjatlar talab qilinadi?", 
-    "answer1" : "UZIT Group GRE, GMAT, ACCA, CFA kabi koʻplab sertifikatlashtirish \n dasturlari va IT imtihonlarini,  Microsoft, Google, Facebook,\n Amazon va  boshqalar sertifikatlarini taklif etadi, bu esa axborot \n texnologiyalari sohasida malaka oshirish uchun imkoniyatlar yaratadi.",
-    "mainTitle2" : "Imtihon topshirish uchun qanday hujjatlar talab qilinadi?", 
-    "answer2" : "UZIT Group GRE, GMAT, ACCA, CFA kabi koʻplab sertifikatlashtirish \n dasturlari va IT imtihonlarini,  Microsoft, Google, Facebook,\n Amazon va  boshqalar sertifikatlarini taklif etadi, bu esa axborot \n texnologiyalari sohasida malaka oshirish uchun imkoniyatlar yaratadi.",
-    "mainTitle3" : "Imtihon topshirish uchun qanday hujjatlar talab qilinadi?", 
-    "answer3" : "UZIT Group GRE, GMAT, ACCA, CFA kabi koʻplab sertifikatlashtirish \n dasturlari va IT imtihonlarini,  Microsoft, Google, Facebook,\n Amazon va  boshqalar sertifikatlarini taklif etadi, bu esa axborot \n texnologiyalari sohasida malaka oshirish uchun imkoniyatlar yaratadi.",
-    "mainTitle4" : "Imtihon topshirish uchun qanday hujjatlar talab qilinadi?", 
-    "answer4" : "UZIT Group GRE, GMAT, ACCA, CFA kabi koʻplab sertifikatlashtirish \n dasturlari va IT imtihonlarini,  Microsoft, Google, Facebook,\n Amazon va  boshqalar sertifikatlarini taklif etadi, bu esa axborot \n texnologiyalari sohasida malaka oshirish uchun imkoniyatlar yaratadi."
+    "mainTitle1" : "Raqamli biznes marketingi nima\nva bu mening biznesim uchun nima uchun muhim?", 
+    "answer1" : "Raqamli marketing - bu mahsulot, xizmat yoki biznesingizni onlayn yoki internet orqali targ'ib qilish yoki reklama qilish.\n Biznes turiga, maqsadlariga yoki biznes hayot siklining qaysi bosqichi \n ekaniga qarab, harakatlar har xil bo'lishi mumkin. Maqsadlaringizni tushunadigan va \n keng qamrovli marketingni qanday yaratishni biladigan marketing jamoasi bilan ishlash muhimdir. \n  eng daromadli kanallarni aniqlash strategiyasi.",
+    "mainTitle2" : "UZIT Group bilan biznesimni qanday boshlashim mumkin?", 
+    "answer2" : "1.Ekranning yuqori qismidagi “Biz bilan bog‘laning” tugmasini bosing va onlayn shakl orqali bizga xabar yuboring.\n2.Bizga uzitgroup@gmail.com elektron pochtasiga xabarni yuboring.\n3.Bizga +998(33)233-80-80 raqamiga qo‘ng‘iroq qiling. \nUZIT Group bilan bog'lanish sizning vaqtingizga arziydi. Hech bo'lmaganda, siz \n tajribali mutaxassislarimiz bilan gaplasha olasiz va kompaniyangizning marketing imkoniyatlari haqida \n va raqamli marketing va reklama xizmatlaridan qanday foyda olishingiz mumkinligi haqida tushunchaga ega bo'lasiz.",
+    "mainTitle3" : "UZIT Group qanday kontent marketingini taklif qiladi?", 
+    "answer3" : "UZIT Group kontent marketingining xar-xil turlarini taklif etadi, shu jumladan,blog postlarini yozish,\n mehmonlar blogini yozish, maqola yozish, SEO kontentni yozish, video yaratish,\n elektron pochta kompaniyalari va boshqalar.",
+    "mainTitle4" : "Sizda individual xizmatlarga buyurtma berish mumkinmi?", 
+    "answer4" : "Ha. Bizda barcha turdagi xizmatlarga alohida buyurtma berishingiz mumkin. Lekin faqat bizni xizmatlarni.",
+    "mainTitle5" : "Klient nimani taqdim etishi kerak?", 
+    "answer5" : "Tanlangan xizmatlarga qarab. Mijoz to'ldirilgan qisqacha ma'lumot,\n logotip (agar mavjud bo'lsa), aloqa raqamlari va elektron pochta manzilini taqdim etishi kerak."
   },
   "questions" : {
     "title" : "Savollar?",

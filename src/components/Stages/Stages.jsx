@@ -148,6 +148,7 @@ export default function Stages() {
       </div>
       <div className="m-auto w-[80%]">
         <Reveal>
+          
           <p className="text-start text-[19px] font-bold mt-[50px]">{t('stages.subtitle')}</p>
         </Reveal>
       </div>

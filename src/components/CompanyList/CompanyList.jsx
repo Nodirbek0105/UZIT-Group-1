@@ -1,256 +1,66 @@
-import React from 'react'
-import style from './Company.module.scss'
+import React from 'react';
+import style from './Company.module.scss';
 
 export default function CompanyList() {
   return (
     <section className={style.list}>
-      <div className={style.listTicker}>  
-      <div className={style.listTickerWrapper}>
+      <div className={style.listTicker}>
+        <div className={style.listTickerWrapper}>
+          <img src="./company/1.png" alt="1" />
 
-      <div>
-        <img src="./company/google.png" alt="google" /> 
-        <p>Google</p>
-        </div>
+          <img src="./company/2.png" alt="microsoft" />
 
-        <div>
-        <img src="./company/microsoft.png" alt="microsoft" /> 
-        <p>Microsoft</p>
-        </div>
+          <img src="./company/3.png" alt="amazon" />
 
-        <div>
-        <img src="./company/apple.png" alt="amazon" /> 
-        <p>Apple</p>
-        </div>
+          <img src="./company/4.png" alt="tesla" />
 
-        <div>
-        <img src="./company/tesla.png" alt="tesla" /> 
-        <p>Tesla</p>
-        </div>
+          <img src="./company/5.png" alt="twitter" />
 
-        <div>
-        <img src="./company/twitter.png" alt="twitter" /> 
-        <p>Twitter</p>
-        </div>
+          <img src="./company/6.png" alt="facebook" />
 
-        <div>
-        <img src="./company/facebook.png" alt="facebook" /> 
-        <p>Facebook</p>
-        </div>
+          <img src="./company/7.png" alt="samsung" />
 
-        <div>
-        <img src="./company/samsung.png" alt="samsung" /> 
-        <p>Samsung</p>
-        </div>
+          <img src="./company/8.png" alt="amazon" />
 
-        <div>
-        <img src="./company/amazon.png" alt="amazon" /> 
-        <p>Amazon</p>
-        </div>
-        <div>
-        <img src="./company/google.png" alt="google" /> 
-        <p>Google</p>
-        </div>
 
-        <div>
-        <img src="./company/microsoft.png" alt="microsoft" /> 
-        <p>Microsoft</p>
-        </div>
+          <img src="./company/9.png" alt="1" />
 
-        <div>
-        <img src="./company/apple.png" alt="amazon" /> 
-        <p>Apple</p>
-        </div>
+          <img src="./company/10.png" alt="microsoft" />
 
-        <div>
-        <img src="./company/tesla.png" alt="tesla" /> 
-        <p>Tesla</p>
-        </div>
+          <img src="./company/1.png" alt="1" />
 
-        <div>
-        <img src="./company/twitter.png" alt="twitter" /> 
-        <p>Twitter</p>
-        </div>
+<img src="./company/2.png" alt="microsoft" />
 
-        <div>
-        <img src="./company/facebook.png" alt="facebook" /> 
-        <p>Facebook</p>
-        </div>
+<img src="./company/3.png" alt="amazon" />
 
-        <div>
-        <img src="./company/samsung.png" alt="samsung" /> 
-        <p>Samsung</p>
-        </div>
+<img src="./company/4.png" alt="tesla" />
 
-        <div>
-        <img src="./company/amazon.png" alt="amazon" /> 
-        <p>Amazon</p>
-        </div>
-        <div>
-        <img src="./company/google.png" alt="google" /> 
-        <p>Google</p>
-        </div>
+<img src="./company/5.png" alt="twitter" />
 
-        <div>
-        <img src="./company/microsoft.png" alt="microsoft" /> 
-        <p>Microsoft</p>
-        </div>
+<img src="./company/6.png" alt="facebook" />
 
-        <div>
-        <img src="./company/apple.png" alt="amazon" /> 
-        <p>Apple</p>
-        </div>
+<img src="./company/7.png" alt="samsung" />
 
-        <div>
-        <img src="./company/tesla.png" alt="tesla" /> 
-        <p>Tesla</p>
-        </div>
+<img src="./company/8.png" alt="amazon" />
 
-        <div>
-        <img src="./company/twitter.png" alt="twitter" /> 
-        <p>Twitter</p>
-        </div>
 
-        <div>
-        <img src="./company/facebook.png" alt="facebook" /> 
-        <p>Facebook</p>
-        </div>
+<img src="./company/9.png" alt="1" />
 
-        <div>
-        <img src="./company/samsung.png" alt="samsung" /> 
-        <p>Samsung</p>
-        </div>
+<img src="./company/10.png" alt="microsoft" />
 
-        <div>
-        <img src="./company/amazon.png" alt="amazon" /> 
-        <p>Amazon</p>
-        </div>
-        <div>
-        <img src="./company/google.png" alt="google" /> 
-        <p>Google</p>
-        </div>
 
-        <div>
-        <img src="./company/microsoft.png" alt="microsoft" /> 
-        <p>Microsoft</p>
-        </div>
 
-        <div>
-        <img src="./company/apple.png" alt="amazon" /> 
-        <p>Apple</p>
-        </div>
 
-        <div>
-        <img src="./company/tesla.png" alt="tesla" /> 
-        <p>Tesla</p>
-        </div>
 
-        <div>
-        <img src="./company/twitter.png" alt="twitter" /> 
-        <p>Twitter</p>
-        </div>
 
-        <div>
-        <img src="./company/facebook.png" alt="facebook" /> 
-        <p>Facebook</p>
-        </div>
 
-        <div>
-        <img src="./company/samsung.png" alt="samsung" /> 
-        <p>Samsung</p>
-        </div>
 
-        <div>
-        <img src="./company/amazon.png" alt="amazon" /> 
-        <p>Amazon</p>
-        </div>
-        <div>
-        <img src="./company/google.png" alt="google" /> 
-        <p>Google</p>
-        </div>
 
-        <div>
-        <img src="./company/microsoft.png" alt="microsoft" /> 
-        <p>Microsoft</p>
-        </div>
 
-        <div>
-        <img src="./company/apple.png" alt="amazon" /> 
-        <p>Apple</p>
-        </div>
 
-        <div>
-        <img src="./company/tesla.png" alt="tesla" /> 
-        <p>Tesla</p>
+          <div></div>
         </div>
-
-        <div>
-        <img src="./company/twitter.png" alt="twitter" /> 
-        <p>Twitter</p>
-        </div>
-
-        <div>
-        <img src="./company/facebook.png" alt="facebook" /> 
-        <p>Facebook</p>
-        </div>
-
-        <div>
-        <img src="./company/samsung.png" alt="samsung" /> 
-        <p>Samsung</p>
-        </div>
-
-        <div>
-        <img src="./company/amazon.png" alt="amazon" /> 
-        <p>Amazon</p>
-        </div>
-        <div>
-        <img src="./company/google.png" alt="google" /> 
-        <p>Google</p>
-        </div>
-
-        <div>
-        <img src="./company/microsoft.png" alt="microsoft" /> 
-        <p>Microsoft</p>
-        </div>
-
-        <div>
-        <img src="./company/apple.png" alt="amazon" /> 
-        <p>Apple</p>
-        </div>
-
-        <div>
-        <img src="./company/tesla.png" alt="tesla" /> 
-        <p>Tesla</p>
-        </div>
-
-        <div>
-        <img src="./company/twitter.png" alt="twitter" /> 
-        <p>Twitter</p>
-        </div>
-
-        <div>
-        <img src="./company/facebook.png" alt="facebook" /> 
-        <p>Facebook</p>
-        </div>
-
-        <div>
-        <img src="./company/samsung.png" alt="samsung" /> 
-        <p>Samsung</p>
-        </div>
-
-        <div>
-        <img src="./company/amazon.png" alt="amazon" /> 
-        <p>Amazon</p>
-        </div>
-        
-
-      
-      <div>
-        </div>   
-      </div>
-   
-
       </div>
     </section>
-  )
+  );
 }
-

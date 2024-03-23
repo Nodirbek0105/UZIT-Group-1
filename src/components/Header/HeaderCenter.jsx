@@ -19,7 +19,7 @@ export default function HeaderCenter() {
         <a href="#services">
           <li>{t('header.links3')}</li>
         </a>
-        <a href="#menu-link">
+        <a href="#projects">
           <li>{t('header.links4')}</li>
         </a>
         <a href="#questions">

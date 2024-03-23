@@ -3,7 +3,7 @@
     "links1" : "About us",
     "links2" : "Team",
     "links3" : "Services",
-    "links4" : "Reviews",
+    "links4" : "Projects",
     "links5" : "Contacts",
     "links6" : "Questions"
 
@@ -135,14 +135,16 @@
   },
   "FAQ" :{
     "title" : "FAQ",
-    "mainTitle1" : "What documents are needed to take the exam?", 
-    "answer1" : "UZIT Group offers numerous certification\n programs and IT-exams,such as GRE, GMAT, ACCA, CFA, certificates \n from Microsoft, Google, Facebook, Amazon and others, creating opportunities for \n developing information technology skills.",
-    "mainTitle2" : "What documents are needed to take the exam?", 
-    "answer2" : "UZIT Group offers numerous certification\n programs and IT-exams,such as GRE, GMAT, ACCA, CFA, certificates \n from Microsoft, Google, Facebook, Amazon and others, creating opportunities for \n developing information technology skills.",
-    "mainTitle3" : "What documents are needed to take the exam?", 
-    "answer3" : "UZIT Group offers numerous certification\n programs and IT-exams,such as GRE, GMAT, ACCA, CFA, certificates \n from Microsoft, Google, Facebook, Amazon and others, creating opportunities for \n developing information technology skills.",
-    "mainTitle4" : "What documents are needed to take the exam?", 
-    "answer4" : "UZIT Group offers numerous certification\n programs and IT-exams,such as GRE, GMAT, ACCA, CFA, certificates \n from Microsoft, Google, Facebook, Amazon and others, creating opportunities for \n developing information technology skills."
+    "mainTitle1" : "What is digital business marketing\nand why is it important for my business?", 
+    "answer1" : "Digital marketing is the promotion or advertising of your product, service or business online or through the internet. \n Depending on the type of business, goals, or what stage \n the business is in the life cycle, efforts may vary.\n It is important to work with a marketing team that understands your goals and knows \n how to create a comprehensive strategy to be able to \n identify the most profitable channels.",
+    "mainTitle2" : "How can I start my business with UZIT Group?", 
+    "answer2" : "1.Click the “Contact Us” button at the top of the screen and send us a message via the online form.\n2.Email us at uzitgroup@gmail.com.\n3.Call us at +998(33)233 -80-80. \nContacting UZIT Group will be worth your time. At a minimum, you will be able to speak \n with our experienced professionals and gain insight into your company's marketing capabilities \n and how you can benefit from digital marketing and advertising services.",
+    "mainTitle3" : "What type of content marketing does UZIT Group offer?", 
+    "answer3" : "UZIT Group offers all different types of content marketing including \n but not limited to: blog post writing, guest blog writing,\n article writing, SEO content writing, video creation, email campaigns and much, much more.",
+    "mainTitle4" : "Is it possible to order individual services from us?", 
+    "answer4" : "Yes. You can order all types of services from us separately. But only what we do.",
+    "mainTitle5" : "What must the customer provide?", 
+    "answer5" : "Depending on the selected services. The customer must provide a completed brief,\n logo (if available), contact numbers and email."
   },
   "questions" : {
     "title" : "Any questions?",

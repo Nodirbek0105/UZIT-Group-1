@@ -8,7 +8,6 @@ export default function ProgrammerServices({ title, description, img }) {
       <img src={img} alt="" />
       <h2 className="mt-[15px] text-[29px] font-medium pb-4">{title}</h2>
       <span className="text-[18px] font-medium mt-2">{description}</span>
-   
     </div>
   );
 }

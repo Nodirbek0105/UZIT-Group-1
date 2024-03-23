@@ -14,7 +14,7 @@ export default function Header({ openBurger, setOpenBurger }) {
 
   return (
     <header className={style.header}>
-      <Drawer openBurger={openBurger} />
+      <Drawer setOpenBurger={setOpenBurger} openBurger={openBurger} />
       {/* Header left side */}
       <HeaderLeftSide />
       {/* Header center */}

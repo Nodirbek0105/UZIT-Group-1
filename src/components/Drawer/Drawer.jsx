@@ -3,7 +3,7 @@ import styles from './Drawer.module.scss';
 import { useTranslation } from 'react-i18next';
 import HeaderRightSide from '../Header/HeaderRightSide';
 
-export default function Drawer({ openBurger }) {
+export default function Drawer({ openBurger, setOpenBurger }) {
   const { t, i18n } = useTranslation();
   const [isPopup, setIsPopup] = React.useState(false);
 
@@ -59,8 +59,10 @@ export default function Drawer({ openBurger }) {
     <div className={`${styles.drawer} ${openBurger ? styles.active : ''}`}>
       {/* languages */}
       <div className="relative mr-[30px] xl:mr-[60px]">
-        <div  className="flex items-center">
-          <span onClick={handlePopup} className="text-[18px] mt-[15px] font-normal cursor-pointer">{selectLanguage}</span>
+        <div className="flex items-center">
+          <span onClick={handlePopup} className="text-[18px] mt-[15px] font-normal cursor-pointer">
+            {selectLanguage}
+          </span>
           <img className="mt-[15px]" src="./handle-button.png" alt="" />
         </div>
 
@@ -80,25 +82,42 @@ export default function Drawer({ openBurger }) {
       <img className={styles['background-img']} src="./Drawer-logo.png" alt="logo" />
       <div className={styles.drawerLinks}>
         <ul className="flex width-[200px] flex-col h-fit m-auto z-10 gap-4">
-          <a href="#menu-link">
+          <a onClick={() => setOpenBurger(!openBurger)} href="#about">
             <li>{t('header.links1')}</li>
           </a>
-          <a href="#menu-link">
+          <a onClick={() => setOpenBurger(!openBurger)} href="#team">
             <li>{t('header.links2')}</li>
           </a>
-          <a href="#menu-link">
+          <a onClick={() => setOpenBurger(!openBurger)} href="#services">
             <li>{t('header.links3')}</li>
           </a>
-          <a href="#menu-link">
+          <a onClick={() => setOpenBurger(!openBurger)} href="#projects">
             <li>{t('header.links4')}</li>
           </a>
-          <a href="#menu-link">
+          <a onClick={() => setOpenBurger(!openBurger)} href="#questions">
             <li>{t('header.links5')}</li>
           </a>
-          <a href="#menu-link">
+          <a onClick={() => setOpenBurger(!openBurger)} href="#contacts">
             <li>{t('header.links6')}</li>
           </a>
         </ul>
+      </div>
+      <div className={styles.drawerSocial}>
+        <a href="#facebook">
+          <img src="./facebook.png" alt="socials-icons" />
+        </a>
+        <a href="#instagram">
+          {' '}
+          <img src="./instagram.png" alt="socials-icons" />
+        </a>
+        <a href="#linkedIn">
+          {' '}
+          <img src="./linkedIn.png" alt="socials-icons" />
+        </a>
+        <a href="#telegram">
+          {' '}
+          <img src="./telegram.png" alt="socials-icons" />
+        </a>
       </div>
       {/* <HeaderRightSide /> */}
     </div>

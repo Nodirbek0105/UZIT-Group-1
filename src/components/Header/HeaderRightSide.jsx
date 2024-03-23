@@ -75,9 +75,9 @@ export default function HeaderRightSide() {
           )}
         </div>
 
-        <div>
+        {/* <div>
           <ToggleTheme />
-        </div>
+        </div> */}
         <div className={style.share}>
           <img src="./share.png" alt="" />
           <div className={style.shareContent}>
