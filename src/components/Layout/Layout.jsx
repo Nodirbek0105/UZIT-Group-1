@@ -11,7 +11,7 @@ export default function Layout({ openBurger, setOpenBurger }) {
   // console.log(theme);
   return (
     <div id={theme}>
-      {/* <Preloader /> */}
+      <Preloader />
 
       <Header openBurger={openBurger} setOpenBurger={setOpenBurger} />
       <Outlet />
