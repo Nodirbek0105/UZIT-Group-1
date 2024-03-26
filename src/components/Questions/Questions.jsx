@@ -7,6 +7,7 @@ import Reveal from '../Reveal/Reveal';
 
 export default function Questions() {
   const { t } = useTranslation();
+  
   return (
     <section id='questions' className={styles.questions}>
       <div className="w-[90%] m-auto ques_container">
