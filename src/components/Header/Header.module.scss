@@ -11,10 +11,13 @@
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  background: #262626;
+  // background: #262626;
   color: #f2f2f2;
   padding-left: 60px;
   padding-right: 67px;
+  position: fixed; 
+  width: 100%; 
+  z-index: 3;
 
   ul {
     a {
@@ -209,6 +212,9 @@
     margin: 0 0.75em;
   }
 
+
+  
+
   @supports selector(:focus-visible) {
     .theme__toggle:focus {
       box-shadow: 0 0 0 0.125em var(--primaryT);
@@ -317,4 +323,9 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+}
+
+.header-active{
+  backdrop-filter: blur(10px) !important;
+  // display: none;
 }

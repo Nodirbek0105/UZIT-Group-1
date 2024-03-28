@@ -12,8 +12,28 @@ export default function Header({ openBurger, setOpenBurger }) {
   const { theme, setTheme } = React.useContext(ThemeProviderCTX);
   console.log(theme);
 
+
+
+  const [isHeaderActive, setIsHeaderActive] = React.useState(false) 
+
+
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset;
+    if (scrollTop >= 900) {
+      setIsHeaderActive(true) 
+      console.log(isHeaderActive);
+    } else {
+      setIsHeaderActive(false)
+      
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
+  
+
+
   return (
-    <header className={style.header}>
+    <header className={`${style.header} ${isHeaderActive ? style['header-active'] : ''}`}>
       <Drawer setOpenBurger={setOpenBurger} openBurger={openBurger} />
       {/* Header left side */}
       <HeaderLeftSide />

@@ -9,6 +9,8 @@ export default function Tarrifs({ title, description, img, aos, delay }) {
     imgArray: img[index],
   }));
   console.log(description);
+
+  
   return (
     <>
       <div data-aos={aos} data-aos-delay={delay}  data-aos-duration="500" className={styles.tarrifsItem}>
