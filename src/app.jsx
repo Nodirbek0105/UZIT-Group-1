@@ -7,6 +7,7 @@ import Home from './pages/Home/Home';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ThemeCTX from './context/ThemeCTX';
+import TarrifsPage from './pages/Tarrifs/TarrifsPage';
 
 export function App() {
   const [openBurger, setOpenBurger] = React.useState(false);
@@ -37,7 +38,9 @@ export function App() {
           <Route
             path="/"
             element={<Layout openBurger={openBurger} setOpenBurger={setOpenBurger} />}>
-            <Route index element={<Home />} />
+            <Route index element={<Home />} /> 
+            <Route path='tarrifs' element={<TarrifsPage/>} /> 
+
           </Route>
         </Routes>
       </Suspense>

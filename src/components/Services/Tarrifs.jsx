@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Services.module.scss';
 import { tariffsItem } from './data.js';
 import Button from '../Button/Button.jsx';
+import { Link } from 'react-router-dom';
 
 export default function Tarrifs({ title, description, img, aos, delay }) {
   const combinedArray = description.map((item, index) => ({
@@ -10,10 +11,13 @@ export default function Tarrifs({ title, description, img, aos, delay }) {
   }));
   console.log(description);
 
-  
   return (
     <>
-      <div data-aos={aos} data-aos-delay={delay}  data-aos-duration="500" className={styles.tarrifsItem}>
+      <div
+        data-aos={aos}
+        data-aos-delay={delay}
+        data-aos-duration="500"
+        className={styles.tarrifsItem}>
         <div className={styles.tarrifsItemTitle}>
           <h2>{title}</h2>
         </div>
@@ -32,6 +36,9 @@ export default function Tarrifs({ title, description, img, aos, delay }) {
           </div>
           <div className="mt-auto">
             {' '}
+            {/* <Link to="tarrifs">
+          
+            </Link> */}
             <button>Подробнее</button>
           </div>
         </div>

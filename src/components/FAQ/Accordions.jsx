@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Accordions({ title, answer }) {
+export default function Accordion({ title, answer }) {
   const [accordionOpen, setAccordionsOpen] = React.useState(false);
   return (
     <>
