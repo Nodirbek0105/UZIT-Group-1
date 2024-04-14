@@ -4,11 +4,32 @@ import Sphere from '../Nova/Sphere';
 import Button from '../Button/Button';
 import { useTranslation } from 'react-i18next';
 import Reveal from '../Reveal/Reveal';
+import { useEffect, useState } from 'preact/hooks';
 
 export default function MainPage() {
   const { t } = useTranslation();
+  const [showMain, setShowMain] = useState(false)
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset;
+    console.log(scrollTop);
+    if (scrollTop >= 900) {
+      setShowMain(true) 
+      
+    } else {
+      setShowMain(false)
+      
+    }
+  };
+  useEffect(()=>{
+    window.addEventListener('scroll', handleScroll)
+
+    return () =>{
+      window.removeEventListener('scroll', handleScroll)
+    }
+  },[])
+ 
   return (
-    <div className={style.mainPage}>
+    <div className={`${style.mainPage} ${showMain ? 'opacity-[0%]' : ''}`}>
       <div className="w-[60%] z-10">
         {' '}
         <Reveal delay="8.8">
