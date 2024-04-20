@@ -16,6 +16,7 @@ export default function About() {
   //     duration: 2,
   //     scrollTrigger: element,
   //   });
+  
   // }, []);
 
   return (
