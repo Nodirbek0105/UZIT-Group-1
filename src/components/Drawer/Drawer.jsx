@@ -32,7 +32,6 @@ export default function Drawer({ openBurger, setOpenBurger }) {
     },
   ];
   const [selectLanguage, setSelectLanguage] = React.useState('RU');
-  console.log(selectLanguage);
   // React.useState(() => {
 
   //     const data = JSON.parse(localStorage.getItem('language'));

@@ -30,15 +30,12 @@ export default function Form() {
 
     emailjs.sendForm('service_5hneqvn', 'template_z6j4wwf', form.current, 'KEU8NfLQIl6K9JJWC').then(
       (result) => {
-        console.log(result.text);
-        console.log('succses');
         alert('Ваш вопрос отправлен.Наш специалист скоро ответить вам.')
         setName('');
         setNumber('');
         setQuestions('');
       },
       (error) => {
-        console.log(error.text);
       },
     );
   };

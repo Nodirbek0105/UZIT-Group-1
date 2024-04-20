@@ -33,7 +33,6 @@ export default function HeaderRightSide() {
     },
   ];
   const [selectLanguage, setSelectLanguage] = React.useState('RU');
-  console.log(selectLanguage);
   // React.useState(() => {
 
   //     const data = JSON.parse(localStorage.getItem('language'));

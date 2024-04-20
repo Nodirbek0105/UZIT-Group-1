@@ -11,7 +11,6 @@ export default function MainPage() {
   const [showMain, setShowMain] = useState(false)
   const handleScroll = () => {
     const scrollTop = window.pageYOffset;
-    console.log(scrollTop);
     if (scrollTop >= 900) {
       setShowMain(true) 
       

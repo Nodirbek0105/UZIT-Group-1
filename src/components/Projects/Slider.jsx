@@ -11,7 +11,6 @@ const Slider = ({ images }) => {
   const goToPrevSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
   };
-  console.log(currentIndex);
   return (
     <div className="slider">
       <button className="slider-button prev" onClick={goToPrevSlide}>

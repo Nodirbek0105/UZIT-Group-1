@@ -10,7 +10,6 @@ import { ThemeProviderCTX } from '../../context/ThemeCTX';
 
 export default function Header({ openBurger, setOpenBurger }) {
   const { theme, setTheme } = React.useContext(ThemeProviderCTX);
-  console.log(theme);
 
 
 
@@ -21,7 +20,6 @@ export default function Header({ openBurger, setOpenBurger }) {
     const scrollTop = window.pageYOffset;
     if (scrollTop >= 900) {
       setIsHeaderActive(true) 
-      console.log(isHeaderActive);
     } else {
       setIsHeaderActive(false)
       
